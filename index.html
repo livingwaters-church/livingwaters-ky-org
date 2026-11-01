@@ -7,12 +7,12 @@
     <!-- Grabbing our global styles directly -->
     <link rel="stylesheet" href="assets/css/style.css">
 
- <!-- Font Awesome Icons -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-   <!-- GLOBAL NAVIGATION HEADER -->
+    <!-- GLOBAL NAVIGATION HEADER -->
     <header class="global-header">
         <div class="brand-identity">
             <span class="brand-title">Living Waters</span>
@@ -25,7 +25,7 @@
                 <li><a href="ministries/index.html">Ministries</a></li>
                 <li><a href="media/index.html">Media</a></li>
                 <li><a href="calendar/index.html">Calendar</a></li>
-                 <li><a href="rightnow/index.html">RightNow</a></li>
+                <li><a href="rightnow/index.html">RightNow</a></li>
                 
                 <!-- Theme Toggle Slider Button -->
                 <li>
@@ -41,7 +41,7 @@
         </nav>
     </header>
 
-   <!-- GLOBAL ANNOUNCEMENT TICKER -->
+    <!-- GLOBAL ANNOUNCEMENT TICKER -->
     <div id="global-ticker"></div>
 
     <!-- DYNAMIC HERO SPLIT SECTION (IMMEDIATE ACTION) -->
@@ -59,84 +59,74 @@
                 </div>
             </div>
 
-            <!-- Right Side: Pastor Welcome Media Block (Brings the front page alive) -->
+            <!-- Right Side: Pastor Welcome Media Block (Brings the front page alive) - INACTIVE/COMMENTED OUT -->
+            <!--
             <div style="flex: 10; min-width: 320px;">
                 <a href="https://youtu.be/rfim4VnJ-NU" target="_blank" style="text-decoration:none; display:block;">
+                    <div style="
+                        background:rgba(255,255,255,0.05);
+                        border:1px solid rgba(255,255,255,0.15);
+                        backdrop-filter:blur(8px);
+                        border-radius:12px;
+                        overflow:hidden;
+                        box-shadow:0 20px 25px -5px rgba(0,0,0,0.3);
+                        transition:transform .2s ease;
+                    ">
+                        <div style="
+                            height:250px;
+                            background-image:
+                            linear-gradient(
+                                rgba(15,23,42,.15),
+                                rgba(15,23,42,.65)
+                            ),
+                            url('https://img.youtube.com/vi/rfim4VnJ-NU/maxresdefault.jpg');
+                            background-size:cover;
+                            background-position:center;
+                            display:flex;
+                            align-items:center;
+                            justify-content:center;
+                        ">
+                            <div style="
+                                width:85px;
+                                height:85px;
+                                background:#38bdf8;
+                                border-radius:50%;
+                                display:flex;
+                                align-items:center;
+                                justify-content:center;
+                                color:#0f172a;
+                                font-size:2.5rem;
+                                font-weight:700;
+                                padding-left:8px;
+                                box-shadow:0 5px 20px rgba(0,0,0,.35);
+                            ">
+                                ▶
+                            </div>
+                        </div>
 
-        <div style="
-            background:rgba(255,255,255,0.05);
-            border:1px solid rgba(255,255,255,0.15);
-            backdrop-filter:blur(8px);
-            border-radius:12px;
-            overflow:hidden;
-            box-shadow:0 20px 25px -5px rgba(0,0,0,0.3);
-            transition:transform .2s ease;
-        ">
-
-            <!-- Leadership Video Thumbnail -->
-            <div style="
-                height:250px;
-                background-image:
-                linear-gradient(
-                    rgba(15,23,42,.15),
-                    rgba(15,23,42,.65)
-                ),
-                url('https://img.youtube.com/vi/rfim4VnJ-NU/maxresdefault.jpg');
-                background-size:cover;
-                background-position:center;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-            ">
-
-                <div style="
-                    width:85px;
-                    height:85px;
-                    background:#38bdf8;
-                    border-radius:50%;
-                    display:flex;
-                    align-items:center;
-                    justify-content:center;
-                    color:#0f172a;
-                    font-size:2.5rem;
-                    font-weight:700;
-                    padding-left:8px;
-                    box-shadow:0 5px 20px rgba(0,0,0,.35);
-                ">
-                    ▶
-                </div>
-
+                        <div style="padding:25px; text-align:center;">
+                            <h3 style="
+                                color:#ffffff;
+                                margin:0 0 10px 0;
+                                font-size:1.4rem;
+                                font-weight:700;
+                            ">
+                                A Message from our Leadership
+                            </h3>
+                            <p style="
+                                color:#93c5fd;
+                                font-size:.95rem;
+                                line-height:1.5;
+                                margin:0;
+                            ">
+                                Meet our church family and hear a welcome message from 
+                                <strong>Pastor Vance C. Evans Sr.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </a>
             </div>
-
-
-            <!-- Leadership Message Text -->
-            <div style="padding:25px; text-align:center;">
-
-                <h3 style="
-                    color:#ffffff;
-                    margin:0 0 10px 0;
-                    font-size:1.4rem;
-                    font-weight:700;
-                ">
-                    A Message from our Leadership
-                </h3>
-
-                <p style="
-                    color:#93c5fd;
-                    font-size:.95rem;
-                    line-height:1.5;
-                    margin:0;
-                ">
-                    Meet our church family and hear a welcome message from 
-                    <strong>Pastor Vance C. Evans Sr.</strong>
-                </p>
-
-            </div>
-
-        </div>
-
-    </a>
-</div>
+            -->
 
         </div>
     </section>
@@ -183,14 +173,13 @@
             
         </div>
         
-     <!-- UPCOMING EVENTS SECTION -->
+        <!-- UPCOMING EVENTS SECTION -->
         <section class="about-section" style="margin-bottom: 60px;">
             <h2 style="text-align: center; margin-bottom: 40px;">Upcoming Events</h2>
             
-               <!-- Grid container -->
-               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+            <!-- Grid container -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
                 
-        
                 <!-- Event 1: Women's Fellowship -->
                 <div class="ministry-card event-women" style="padding: 20px; text-align: center;">
                     <img src="assets/images/events/abiding-room.png"
@@ -200,7 +189,7 @@
                     <p style="font-size: 0.9rem;"><strong>Date:</strong> October 19, 2026<br><strong>Time:</strong> 5:30 PM</p>
                 </div>
 
-                    <!-- Event 2: Men's Fellowship -->
+                <!-- Event 2: Men's Fellowship -->
                 <div class="ministry-card event-men" style="padding: 20px; text-align: center;">
                     <img src="assets/images/events/gladiator.png"
                          alt="Iron Sharpening Iron"
@@ -209,48 +198,19 @@
                     <p style="font-size: 0.9rem;"><strong>Date:</strong> October 10, 2026<br><strong>Time:</strong> 9:00 PM</p>
                 </div>
 
-                    <!-- Event 3: Ministry Event -->
+                <!-- Event 3: Ministry Event -->
                 <div class="ministry-card event-ministry" style="padding: 20px; text-align: center;">
                      <img src="assets/images/awana.jpg"
-                         alt="The Abiding Room"
-                         style="width:100%; height:150px; object-fit:cover; border-radius:10px; margin-bottom:0px;">
+                          alt="The Abiding Room"
+                          style="width:100%; height:150px; object-fit:cover; border-radius:10px; margin-bottom:0px;">
                     <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Awana</h3>
                     <p style="font-size: 0.9rem;"><strong>Date:</strong> Every Wednesday<br><strong>Time:</strong> 6:00 PM</p>
                 </div>
 
-               
-
-                    <!-- Event 4: Ministry Event
-                <div class="ministry-card event-outreach" style="padding: 20px; text-align: center;">
-                     <img src="assets/images/backpack-giveawayv2.png"
-                        style="width:100%; height:190px; object-fit:contain; border-radius:10px; margin-bottom:0px; background:#0d2445;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0px;">
-                        "A Mission of Hope"<br>Kids BackPack Giveaway
-                    </h3>
-                    <p style="font-size: 0.9rem;">
-                        <strong>Date:</strong> August 7, 2026<br>
-                        <strong>Volunteers:</strong> Show 9:30am Mission Building<br>
-                        <strong>Time:</strong> 10:30 AM<br>
-                        <strong>Location:</strong> Oak Grove Community Center
-                    </p>
-                </div>-->
-        
-                <!--Event 5: Feeding America
-                <div class="ministry-card event-outreach" style="padding: 20px; text-align: center;">
-                     <img src="assets/images/feeding-america.png"
-                    style="width:100%; height:150px; object-fit:cover; border-radius:10px; margin-bottom:0px;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0px;">Feeding America</h3>
-                    <p style="font-size: 0.9rem;"><strong>Date:</strong> October 13, 2026<br>
-                    <strong>Time:</strong> 9:00 AM<br>
-                    <strong>Volunteers:</strong>Show 8:00am<br>
-                    <strong>Location:</strong> Oak Grove Community Center
-                    </p>
-                </div> -->
-        
                 <!-- Event 6: Elisha's Closet -->
                 <div class="ministry-card event-outreach" style="padding: 20px; text-align: center;">
                      <img src="assets/images/elishas-closet.jpg"
-                      style="width:100%; height:150px; object-fit:cover; border-radius:10px; margin-bottom:0px;">
+                          style="width:100%; height:150px; object-fit:cover; border-radius:10px; margin-bottom:0px;">
                     <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Elisha's Closet Food Pantry</h3>
                     <p style="font-size: 0.9rem;"><strong>Date:</strong> October 23, 2026<br><strong>Time:</strong> 9:00 - 12:00 PM</p>
                 </div>
@@ -266,214 +226,13 @@
                 <p style="color: #64748b; font-size: 0.95rem;">A quick glance at what's coming up next month</p>
             </div>
             
-               <!-- Grid container -->
-               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+            <!-- Grid container -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
                 
-               <!-- Look Ahead 1: Gladiator Training -->
+                <!-- Look Ahead 1: Gladiator Training -->
                 <div class="ministry-card event-men" style="padding: 20px; text-align: center; opacity: 0.95;">
                     <img src="assets/images/events/gladiator.png"
                          alt="Gladiator Training"
                          style="width: 100%; height: 130px; object-fit: cover; border-radius: 8px; margin-bottom: 12px; border: 1px solid #cbd5e1;">
                     <span style="display: inline-block; background: #eff6ff; color: #1e40af; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-bottom: 8px;">November Preview</span>
-                    <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Gladiator Training</h3>
-                    <p style="font-size: 0.9rem; margin: 0;"><strong>Date:</strong> November 14, 2026<br><strong>Time:</strong> 9:00 AM</p>
-                </div>
-
-               <!-- Look Ahead 2: Thanksgiving Basket Giveaway -->
-                <div class="ministry-card event-outreach" style="padding: 20px; text-align: center; opacity: 0.95;">
-                    
-                    <!-- Clickable Thumbnail Link -->
-                    <a href="ministries/mission-of-hope.html" style="display: block; text-decoration: none;">
-                        <img src="assets/images/thanks3-1.png"
-                             alt="Thanksgiving Basket Giveaway"
-                             style="width: 100%; height: 130px; object-fit: cover; border-radius: 8px; margin-bottom: 12px; border: 1px solid #cbd5e1; transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: pointer;"
-                             onmouseover="this.style.transform='scale(1.02)';" 
-                             onmouseout="this.style.transform='scale(1)';">
-                    </a>
-                
-                    <span style="display: inline-block; background: #f0fdf4; color: #15803d; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-bottom: 8px;">Upcoming Outreach</span>
-                    
-                    <h3 style="font-size: 1.1rem; margin-bottom: 8px;">
-                        <a href="ministries/mission-of-hope.html" style="color: inherit; text-decoration: none;">Thanksgiving Giveaway</a>
-                    </h3>
-                    
-                    <p style="font-size: 0.9rem; margin: 0;">
-                        <strong>Date:</strong> November 21, 2026<br>
-                        <strong>Time:</strong> 11:30 AM
-                    </p>
-                </div>
-
-                <!-- Look Ahead 3: Pastor Appreciation Day -->
-                <div class="ministry-card event-women" style="padding: 20px; text-align: center; opacity: 0.95;">
-                    <img src="assets/images/events/pastor-retreat.jpg"
-                         alt="Pastor Appreciation Day"
-                         style="width: 100%; height: 130px; object-fit: cover; border-radius: 8px; margin-bottom: 12px; border: 1px solid #cbd5e1;">
-                    <span style="display: inline-block; background: #fdf2f8; color: #be185d; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-bottom: 8px;">November Preview</span>
-                    <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Pastor Retreat</h3>
-                    <p style="font-size: 0.9rem; margin: 0;"><strong>Date:</strong>TBD<br><strong></strong>TBD</p>
-                </div>
-
-                <!-- Look Ahead 4: Feeding America -->
-                <div class="ministry-card event-outreach" style="padding: 20px; text-align: center; opacity: 0.95;">
-                    <img src="assets/images/feeding-america.png"
-                         alt="Feeding America"
-                         style="width: 100%; height: 130px; object-fit: cover; border-radius: 8px; margin-bottom: 12px; border: 1px solid #cbd5e1;">
-                    <span style="display: inline-block; background: #f0fdf4; color: #15803d; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-bottom: 8px;">November Preview</span>
-                    <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Feeding America</h3>
-                    <p style="font-size: 0.9rem; margin: 0;"><strong>Date:</strong> November 10, 2026<br><strong>Time:</strong> 9:00 AM</p>
-                </div>
-
-            </div>
-        </section>
-       
-        
-       <!-- CURRENT MOMENTUM ROW -->
-        <div class="media-header" style="margin-bottom: 25px; text-align: center !important;">
-                <h2 style="text-align: center !important;">Current Momentum</h2>
-                <p style="text-align: center !important;">Catch up on what God is doing inside our church body right now.</p>
-        </div>
-
-        <div class="media-split-row" style="margin-bottom: 60px;">
-            
-            <!-- Left Panel: Sermon Highlight Panel (Existing) -->
-            <div class="media-panel" style="display: flex; flex-direction: column; justify-content: space-between;">
-                <div>
-                    <span class="panel-badge">Latest Message</span>
-                    <h3 id="sermon-title">Loading latest sermon...</h3>
-                    <p id="sermon-speaker" style="color:#64748b; font-weight:600; margin-top:-10px; margin-bottom:15px;"> Loading speaker...</p>
-                    <p>Missed last Sunday's message or want to review the scripture text again? Stream the message recording right here.</p>
-                    
-                    <a id="sermon-link" href="#" target="_blank" style="display: block; position: relative; background: #000; padding-top: 56.25%; border-radius: 6px; overflow: hidden; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <div id="sermon-thumbnail" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)); display: flex; align-items: center; justify-content: center; background-size: cover; background-position: center;">
-                            <div style="background: rgba(37, 99, 235, 0.9); width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: #fff;">▶</div>
-                        </div>
-                    </a>
-                </div>
-                
-                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #e2e8f0; padding-top: 15px; margin-top: 5px;">
-                    <span id="sermon-scripture" style="font-size:0.85rem;color:#94a3b8;"> Loading...</span>
-                    <a href="https://www.youtube.com/@LivingWatersCommunityChurch/videos" target="_blank" class="btn-media-action" style="margin: 0;">View Full Sermons on YouTube &rarr;</a>
-                </div>
-            </div>
-
-            <!-- Right Panel: Connect on Facebook & Leave a Review -->
-            <div class="media-panel" style="display: flex; flex-direction: column; justify-content: space-between;">
-                <div>
-                    <span class="panel-badge" style="background-color: #dbeafe; color: #1e40af;">Community</span>
-                    <h3>Connect & Share Your Experience</h3>
-                    <p>Help others find our church family! Follow our page for updates and leave an honest review to let others know what God is doing here.</p>
-                    
-                    <!-- Graphic Display -->
-                    <div style="margin: 20px 0; text-align: center;">
-                        <a href="https://www.facebook.com/LivingWatersCommunityChurchOakgrove" target="_blank">
-                            <img src="assets/images/Follow us on FB.png" alt="Help others find Living Waters - Follow our page and leave a review" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
-                        </a>
-                    </div>
-                </div>
-                
-                <div>
-                    <a href="https://www.facebook.com/LivingWatersCommunityChurchOakgrove" target="_blank" class="btn-media-action" style="background: #1877f2; display: block; text-align: center; margin: 0;">Visit Our Facebook Page</a>
-                </div>
-            </div>
-
-        </div>
-            
-            <!-- RightNow Media Community Gift -->
-            <div class="media-panel" style="display: flex; flex-direction: column; justify-content: space-between;">
-                <div>
-                    <span class="panel-badge-alt">Free Resource</span>
-                    <h3>Equipping Your Family</h3>
-                    <p>We believe in resourcing our community throughout the week. Tap into thousands of trusted streaming devotionals, bible study modules, and safe content options for your kids.</p>
-                    
-                    <div class="media-placeholder-box alt-bg" style="text-align: center; padding: 25px 20px; margin: 20px 0;">
-                        <span style="font-weight: 800; font-size: 1.4rem; color: #000; display: block; margin-bottom: 5px;">rightnow <span style="color: #ef4444;">MEDIA</span></span>
-                        <div style="background: #f1f5f9; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; color: #334155; font-weight: 600; display: inline-block; margin-top: 5px; border: 1px solid #e2e8f0;">
-                            📲 Text <strong style="color: #ef4444;">LWKY</strong> to <strong>49775</strong>
-                        </div>
-                    </div>
-                </div>
-                
-                <a href="https://www.livingwaters-ky.org/RightNow-Media" class="btn-media-action" style="background: #0f172a;">Get Instant Access</a>
-            </div>
-
-        </div>
-
-    </main>
-
-            <!-- GLOBAL FOOTER -->
-            <div id="global-footer"></div>
-            
-            <script src="../assets/JS/footer.js"></script> 
-        
-           <script src="../assets/JS/theme.js"></script> 
-        
-            
-   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const memberList = document.getElementById('member-list');
-        if (!memberList) return;
-
-        // 1. CHECK THE GATE: Is the user logged in?
-        const isLoggedIn = localStorage.getItem('isLoggedIn'); // This will be set by login.html later
-
-        if (isLoggedIn === 'true') {
-            // 2. ONLY FETCH IF AUTHORIZED
-            fetch('http://localhost:3000/api/members')
-                .then(response => response.json())
-                .then(data => {
-                    data.forEach(member => {
-                        // --- YOUR EXISTING LOGIC STAYS HERE ---
-                        const card = document.createElement('div');
-                        const nameParts = member.name.split(' ');
-                        const lastName = nameParts.length > 1 ? nameParts[nameParts.length - 1] : member.name;
-                        const firstLetter = lastName.charAt(0).toUpperCase();
-                        
-                        let colorClass = (firstLetter <= 'H') ? "event-men" : (firstLetter <= 'P') ? "event-women" : "event-outreach";
-                        
-                        card.className = `ministry-card ${colorClass}`;
-                        card.style.padding = "20px";
-                        card.style.textAlign = "center";
-                        
-                        card.innerHTML = `
-                            <h3 style="font-size: 1.1rem; margin-bottom: 10px;">${member.name}</h3>
-                            <p style="font-size: 0.9rem;">Status: <strong>${member.status}</strong><br>City: ${member.city}</p>
-                        `;
-                        memberList.appendChild(card);
-                    });
-                })
-                .catch(err => console.error('Error fetching members:', err));
-        } else {
-    // IF NOT LOGGED IN: Show the gate (the login button)
-    memberList.innerHTML = `
-        <div style="
-            display:flex;
-            justify-content:center;
-            width:100%;
-        ">
-            <div style="
-                max-width:600px;
-                width:100%;
-                padding:40px;
-                background:#f8fafc;
-                border:2px dashed #cbd5e1;
-                border-radius:12px;
-                text-align:center;
-                box-sizing:border-box;
-            ">
-                <h3>Members Only</h3>
-                <p>This directory is private. Please sign in to view your church family.</p>
-                <a href="login.html"
-                   class="signin-btn"
-                   style="display:inline-block; margin-top:15px;">
-                    Sign In
-                </a>
-            </div>
-        </div>
-    `;
-}
-    });
-</script>
-    <script src="assets/JS/ticker.js"></script>
-    <script src="assets/JS/latest-sermon.js"></script>
-</body>
-</html>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Gl
