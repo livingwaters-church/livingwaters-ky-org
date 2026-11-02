@@ -22,42 +22,42 @@
       })();
     </script>
 </head>
-<body>
-
-    <!-- GLOBAL NAVIGATION HEADER -->
-    <header class="global-header">
-        <div class="brand-identity">
-            <a href="../index.html" style="text-decoration: none;">
-                <span class="brand-title">Living Waters</span>
-            </a>
-            <span class="brand-sub">Community Church</span>
-        </div>
-        <nav class="nav-container">
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about/index.html">About</a></li>
-                <li><a href="index.html" class="active">Ministries</a></li>
-                <li><a href="../media/index.html">Media</a></li>
-                <li><a href="../calendar/index.html">Calendar</a></li>
-                <li><a href="../rightnow/index.html">RightNow</a></li>
-
-                <!-- Global Theme Toggle Slider Button -->
-                <li>
-                    <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle Dark/Light Mode">
-                        <span class="slider-thumb">
-                            <i id="theme-icon" class="fa-solid fa-moon"></i>
-                        </span>
-                    </button>
-                </li>
-
-                <li><a href="../donate/index.html" class="btn-nav-give">Give</a></li>
-            </ul>
-        </nav>
-    </header>
     
-    <!-- ==========================================================================
-       HERO VIEWPORT LAYER
-       ========================================================================== -->
+<body>
+    <!-- GLOBAL NAVIGATION HEADER -->
+    <header class="global-header-wrapper">
+        <div class="global-header">
+            <div class="brand-identity">
+                <a href="../index.html" style="text-decoration: none;">
+                    <span class="brand-title">Living Waters</span>
+                </a>
+                <span class="brand-sub">Community Church</span>
+            </div>
+            <nav class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="index.html" class="active">Ministries</a></li>
+                    <li><a href="../media/index.html">Media</a></li>
+                    <li><a href="../calendar/index.html">Calendar</a></li>
+                    <li><a href="../rightnow/index.html">RightNow</a></li>
+
+                    <!-- Global Theme Toggle Slider Button -->
+                    <li>
+                        <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle Dark/Light Mode">
+                            <span class="slider-thumb">
+                                <i id="theme-icon" class="fa-solid fa-moon"></i>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li><a href="../donate/index.html" class="btn-nav-give">Give</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO VIEWPORT LAYER -->
     <section class="hero-viewport"
         style="background:
         linear-gradient(rgba(15,23,42,.60), rgba(15,23,42,.75)),
@@ -67,99 +67,81 @@
 
         <div class="hero-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
             <p style="font-size: 1.25rem; line-height: 1.6; text-shadow: 0 2px 4px rgba(0,0,0,0.6);">A community designed for single adults to build authentic faith, form meaningful relationships, and serve together.</p>
-            <!--<a href="#events" class="btn-primary">View Upcoming Events</a>-->
         </div>
     </section>
 
-    <!-- ==========================================================================
-       LOGISTICS ZONE BAR
-       ========================================================================== -->
-    <div class="logistics-bar">
-        <div class="logistics-item">
-            <h3>Gathering Time</h3>
-            <p>Every 4th Saturday</p>
-        </div>
-        <div class="logistics-item">
-            <h3>Location</h3>
-            <p>LWCC</p>
-        </div>
-        <div class="logistics-item">
-            <h3>Contact Leader</h3>
-            <p>singles@livingwaters.org</p>
-        </div>
-    </div>
+    <!-- MAIN BODY WRAPPER -->
+    <main class="media-container" style="padding-top: 30px;">
+        <!-- Back Link Navigation Block -->
+        <p style="margin-bottom: 30px;">
+            <a href="index.html" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">&larr; Back to All Ministries</a>
+        </p>
 
-    <!-- ==========================================================================
-       SINGLES MINISTRY EVENTS SECTION
-       ========================================================================== -->
-    <section id="events" class="ministries-container">
-        <div class="ministries-header">
-            <h2>Singles Ministry Events</h2>
-            <p>Connect, fellowship, and grow together in faith.</p>
+        <!-- LOGISTICS ZONE BAR -->
+        <div class="logistics-bar" style="margin-bottom: 40px;">
+            <div class="logistics-item">
+                <h3>Gathering Time</h3>
+                <p>Every 4th Saturday</p>
+            </div>
+            <div class="logistics-item">
+                <h3>Location</h3>
+                <p>LWCC</p>
+            </div>
+            <div class="logistics-item">
+                <h3>Contact Leader</h3>
+                <p>singles@livingwaters.org</p>
+            </div>
         </div>
 
-        <div class="ministries-grid">
-            <!-- Upcoming Event: September 2026 -->
-            <div class="event-card">
-                <img src="../assets/images/events/singles ministry sept.png" alt="Bible and Breakfast Singles Ministry">
-                <div class="event-card-body">
-                    <span class="event-badge upcoming">Upcoming Event</span>
-                    <h3>Bible and Breakfast</h3>
-                    <p class="event-details">
-                        <strong>Date:</strong> September 26, 2026<br>
-                        <strong>Time:</strong> 9:00 AM<br>
-                        <strong>Location:</strong> Living Waters Community Church<br>
-                        <em>Food, Fellowship, Faith, & Friends</em>
-                    </p>
-                    <!--<a href="#rsvp" class="btn-media-action event-action-btn">RSVP for This Event</a>-->
-                </div>
+        <!-- SINGLES MINISTRY EVENTS SECTION -->
+        <section id="events" class="ministries-container">
+            <div class="ministries-header">
+                <h2>Singles Ministry Events</h2>
+                <p>Connect, fellowship, and grow together in faith.</p>
             </div>
 
-            <!-- Past Event Archive: July 2026 -->
-            <div class="event-card event-archive">
-                <img src="../assets/images/events/725 Singles ministry Flyer.jpg" alt="Light Snacks with Heavy Conversation">
-                <div class="event-card-body">
-                    <span class="event-badge archive">Event Archive</span>
-                    <h3>Light Snacks & Heavy Conversation</h3>
-                    <p class="event-details">
-                        <strong>Date:</strong> Saturday, July 25, 2026<br>
-                        <strong>Time:</strong> 11:00 AM<br>
-                        <strong>Location:</strong> Living Waters Community Church<br>
-                        <em>A powerful time of transparent fellowship and connection</em>.
-                    </p>
-                    <div class="event-concluded-banner">
-                        Event Concluded
+            <div class="ministries-grid">
+                <!-- Upcoming Event: September 2026 -->
+                <div class="event-card">
+                    <img src="../assets/images/events/singles ministry sept.png" alt="Bible and Breakfast Singles Ministry">
+                    <div class="event-card-body">
+                        <span class="event-badge upcoming">Upcoming Event</span>
+                        <h3>Bible and Breakfast</h3>
+                        <p class="event-details">
+                            <strong>Date:</strong> September 26, 2026<br>
+                            <strong>Time:</strong> 9:00 AM<br>
+                            <strong>Location:</strong> Living Waters Community Church<br>
+                            <em>Food, Fellowship, Faith, & Friends</em>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Past Event Archive: July 2026 -->
+                <div class="event-card event-archive">
+                    <img src="../assets/images/events/725 Singles ministry Flyer.jpg" alt="Light Snacks with Heavy Conversation">
+                    <div class="event-card-body">
+                        <span class="event-badge archive">Event Archive</span>
+                        <h3>Light Snacks & Heavy Conversation</h3>
+                        <p class="event-details">
+                            <strong>Date:</strong> Saturday, July 25, 2026<br>
+                            <strong>Time:</strong> 11:00 AM<br>
+                            <strong>Location:</strong> Living Waters Community Church<br>
+                            <em>A powerful time of transparent fellowship and connection</em>.
+                        </p>
+                        <div class="event-concluded-banner">
+                            Event Concluded
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- ==========================================================================
-       GLOBAL FOOTER
-       ========================================================================== -->
-    <footer class="global-footer">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h4>Living Waters Community Church</h4>
-                <p>Rooted in faith, growing in grace, and reaching out in love to our community and the world.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Service Times</h4>
-                <p><strong>Sunday Worship:</strong> 10:00 AM</p>
-                <p><strong>Wednesday Bible Study:</strong> 7:00 PM</p>
-            </div>
-            <div class="footer-col">
-                <h4>Contact Us</h4>
-                <p>123 Living Waters Way</p>
-                <p>Clarksville, TN 37040</p>
-                <p>Email: info@livingwaters.org</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Living Waters Community Church. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- DYNAMIC GLOBAL FOOTER INJECTION CONTAINER -->
+    <div id="global-footer"></div>
 
+    <!-- SCRIPTS -->
+    <script src="../assets/JS/footer.js"></script> 
+    <script src="../assets/JS/theme.js"></script> 
 </body>
 </html>
