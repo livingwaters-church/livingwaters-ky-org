@@ -349,49 +349,77 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
    6. GLOBAL FOOTER
    ========================================================================== */
 .global-footer {
-    background-color: #0f172a; /* Dark charcoal slate */
-    color: #94a3b8;            /* Soft gray text color */
-    padding: 30px 20px 15px 20px; /* Reduced top/bottom padding significantly */
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 20px 20px 12px 20px; /* Slim, compact padding */
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;                 /* Tighter gap between columns */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
     max-width: var(--max-width);
-    margin: 0 auto 20px auto;  /* Reduced bottom margin */
-    align-items: center;       /* Centers content nicely vertically */
-    text-align: center;        /* Centers text nicely for smaller screens */
+    margin: 0 auto 15px auto;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
     .footer-grid {
-        text-align: left;      /* Left-aligns columns on desktop viewports */
+        text-align: left;
     }
 }
 
 .footer-col h4 {
     color: var(--bg-white);
-    font-size: 1rem;
-    margin-bottom: 10px;       /* Tighter spacing under headers */
+    font-size: 0.95rem;
+    margin-bottom: 6px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
 
 .footer-col p {
-    margin-bottom: 6px;        /* Tighter line spacing for paragraphs */
-    font-size: 0.88rem;        /* Slightly more compact font size */
+    margin-bottom: 4px;
+    font-size: 0.85rem;
 }
 
+/* Bottom Bar: Aligns Copyright and Social Quicklinks Inline */
 .footer-bottom {
     border-top: 1px solid #334155;
     max-width: var(--max-width);
     margin: 0 auto;
-    padding-top: 15px;         /* Reduced padding above copyright */
-    text-align: center;
-    font-size: 0.8rem;         /* Clean, compact copyright text */
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.8rem;
 }
 
+/* Inline Quick Link Icons Container */
+.footer-social-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-social-links a {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--primary-blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.footer-social-links a:hover {
+    background: var(--accent-blue);
+}
 /* ==========================================================================
    7. RESPONSIVE DESIGN BREAKPOINTS
    ========================================================================== */
