@@ -382,6 +382,16 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     font-size: 0.85rem;
 }
 
+.footer-col a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+    color: var(--accent-blue);
+}
+
 /* Bottom Bar: Aligns Copyright and Social Quicklinks Inline */
 .footer-bottom {
     border-top: 1px solid #334155;
@@ -389,11 +399,17 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     margin: 0 auto;
     padding-top: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centered on mobile */
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
     font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+    .footer-bottom {
+        justify-content: space-between; /* Space-between on desktop */
+    }
 }
 
 /* Inline Quick Link Icons Container */
@@ -414,12 +430,14 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     justify-content: center;
     font-size: 0.8rem;
     text-decoration: none;
-    transition: background 0.2s;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .footer-social-links a:hover {
     background: var(--accent-blue);
+    transform: translateY(-2px);
 }
+
 /* ==========================================================================
    7. RESPONSIVE DESIGN BREAKPOINTS
    ========================================================================== */
