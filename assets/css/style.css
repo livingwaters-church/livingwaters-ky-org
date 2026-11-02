@@ -80,6 +80,12 @@ html {
 /* ==========================================================================
    2. GLOBAL NAVIGATION HEADER
    ========================================================================== */
+.global-header-wrapper {
+    width: 100%;
+    background-color: var(--bg-white);
+    border-bottom: 1px solid var(--card-border);
+}
+
 .global-header {
     display: flex;
     justify-content: space-between;
@@ -87,7 +93,7 @@ html {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 20px;
-    background-color: var(--bg-white);
+    background-color: transparent; /* Allows full-width wrapper background to show */
 }
 
 .brand-identity {
