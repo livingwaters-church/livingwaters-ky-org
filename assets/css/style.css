@@ -198,7 +198,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
    3. HERO VIEWPORT LAYER WITH TEXT OVERLAY
    ========================================================================== */
 .hero-viewport {
-    /* Using a dark gradient overlay to guarantee text passes strict accessibility contrasts */
     background: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.7)), 
                 url('../images/church-hero-placeholder.jpg') no-repeat center center/cover;
     min-height: 70vh;
@@ -254,7 +253,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 #beliefs {
-    scroll-margin-top: 120px; /* Adjust this number until the heading lands exactly where you want it */
+    scroll-margin-top: 120px;
 }
 
 /* ==========================================================================
@@ -344,8 +343,8 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
    6. GLOBAL FOOTER
    ========================================================================== */
 .global-footer {
-    background-color: #0f172a; /* Extra dark gray slate */
-    color: #94a3b8;            /* Soft gray footer text color */
+    background-color: #0f172a;
+    color: #94a3b8;
     padding: 60px 20px 20px 20px;
 }
 
@@ -408,6 +407,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
         gap: 15px;
     }
 }
+
 /* ==========================================================================
    8. DONATE PAGE SPECIFIC LAYOUTS
    ========================================================================== */
@@ -436,7 +436,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     line-height: 1.6;
 }
 
-/* 3-Column Layout Grid */
 .giving-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -444,7 +443,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     margin-bottom: 80px;
 }
 
-/* Individual Giving Cards Base */
 .giving-card {
     background-color: var(--bg-white);
     border: 1px solid #e2e8f0;
@@ -462,33 +460,26 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     box-shadow: var(--card-hover-shadow);
 }
 
-/* --- Card Theme Modifiers --- */
-
-/* General Fund: Clean professional blue accent */
 .giving-card.general-fund {
     border-top: 5px solid #3b82f6;
 }
 
-/* Fellowship Hall: Warm burnt orange/amber accent for gathering & community */
 .giving-card.fellowship-hall {
     border-top: 5px solid #d97706;
     background: linear-gradient(to bottom, #fffdfa 0%, var(--bg-white) 100%);
 }
 
-/* A Mission of Hope (Highlighted Outreach): Ruby red/purple accent */
 .giving-card.highlighted {
     border-top: 5px solid #e11d48;
     background: linear-gradient(to bottom, #fff5f5 0%, var(--bg-white) 100%);
 }
 
-/* Mortgage Relief Fund: Steady cyan or deep navy accent for stewardship */
 .giving-card.mortgage-fund {
     border-top: 5px solid #0891b2;
 }
 
-/* Sacrificial Giving Card: Rich purple or gold accent */
 .giving-card.sacrificial-giving {
-    border-top: 5px solid #8b5cf6; /* Vibrant Purple */
+    border-top: 5px solid #8b5cf6;
     background: linear-gradient(to bottom, #faf5ff 0%, var(--bg-white) 100%);
 }
 
@@ -505,7 +496,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     margin-bottom: 20px;
 }
 
-/* List Formatting for Outreach Items */
 .benevolence-list {
     list-style-position: inside;
     color: var(--text-muted);
@@ -514,7 +504,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     line-height: 1.8;
 }
 
-/* Give Button styling inside the cards */
 .btn-give {
     display: block;
     text-align: center;
@@ -532,7 +521,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     background-color: var(--accent-blue);
 }
 
-/* Styling for the Read More Accordion */
 .read-more-details {
     margin-top: 15px;
 }
@@ -542,12 +530,11 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     font-weight: 600;
     cursor: pointer;
     user-select: none;
-    list-style: none; /* Hides default triangle marker in some browsers */
+    list-style: none;
     display: inline-block;
     transition: color 0.2s ease;
 }
 
-/* Hide default browser marker for details */
 .read-more-toggle::-webkit-details-marker {
     display: none;
 }
@@ -557,7 +544,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     text-decoration: underline;
 }
 
-/* Optional: Change text dynamically when open using CSS trick */
 .read-more-details[open] .read-more-toggle {
     margin-bottom: 10px;
 }
@@ -567,11 +553,10 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     font-size: 0.9em;
     color: var(--text-muted);
 }
-/* If you want it to just say "Read less..." instead of hiding */
 
 .guest-btn {
     display: inline-block;
-    background-color: #6c757d; /* Muted gray color */
+    background-color: #6c757d;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -583,12 +568,12 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 }
 
 .nav-btn {
-    padding: 10px 15px;      /* Consistent padding */
+    padding: 10px 15px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 700;
     display: inline-block;
-    transition: opacity 0.2s; /* Nice hover effect */
+    transition: opacity 0.2s;
 }
 
 .btn-nav-guest {
@@ -597,20 +582,19 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 }
 
 .btn-nav-give {
-    background: #1e3a8a; /* Your 'Give' color */
+    background: #1e3a8a;
     color: white;
 }
 
 .btn-nav-sign-in {
-    background: #38bdf8; /* Your 'Sign In' color */
+    background: #38bdf8;
     color: #0f172a;
 }
 
 .nav-btn:hover {
-    opacity: 0.9; /* Makes them feel interactive */
+    opacity: 0.9;
 }
 
-/* Mail-In Alternative Section Banner */
 .mail-banner {
     background-color: var(--bg-light);
     border: 1px dashed #cbd5e1;
@@ -634,7 +618,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     margin: 0 auto 25px auto;
 }
 
-/* Address Display Container Box */
 .address-box {
     background-color: var(--bg-white);
     border: 1px solid #e2e8f0;
@@ -646,6 +629,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     color: var(--text-main);
     box-shadow: var(--card-shadow);
 }
+
 /* ==========================================================================
    9. MINISTRIES DIRECTORY GRID LAYOUTS
    ========================================================================== */
@@ -674,7 +658,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     line-height: 1.6;
 }
 
-/* Balanced Grid Setup */
 .ministries-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -682,7 +665,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     margin-bottom: 40px;
 }
 
-/* Individual Ministry Cards */
 .ministry-card {
     background-color: var(--bg-white);
     border: 1px solid #e2e8f0;
@@ -723,7 +705,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     margin-bottom: 0px;
 }
 
-/* Secondary Connection Buttons */
 .btn-ministry-contact {
     display: block;
     text-align: center;
@@ -744,22 +725,18 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 }
 
 .rolodex-container {
-    display: flex;              /* Put everything in one row */
-    overflow-x: auto;           /* Allow horizontal scrolling */
-    gap: 20px;                  /* Space between cards */
-    padding-bottom: 20px;       /* Adds space for the scrollbar */
-    scroll-behavior: smooth;    /* Makes scrolling feel nice */
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
 }
 
-/* Optional: Make the cards look good in a horizontal list */
 .rolodex-container .ministry-card {
-    min-width: 250px;           /* Prevents cards from squishing */
-    flex: 0 0 auto;             /* Keeps cards from stretching */
+    min-width: 250px;
+    flex: 0 0 auto;
 }
 
-/* Add these right before the comment for Section 10 */
-
-/* Centering and styling the directory header */
 #member-directory {
     text-align: center;
     margin-bottom: 40px;
@@ -770,7 +747,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     margin-bottom: 5px;
 }
 
-/* Optional: Add this if you want the subtitle to look distinct */
 .directory-subtitle {
     color: var(--text-muted);
     margin-bottom: 30px;
@@ -778,22 +754,57 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 }
 
 /* ==========================================================================
+   HORIZONTAL 6-CARD ROW LAYOUT & HOVER ZOOM EFFECT
+   ========================================================================== */
+.events-flex-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow-x: auto;
+    padding: 10px 5px;
+    scroll-behavior: smooth;
+}
+
+.events-flex-row::-webkit-scrollbar {
+    height: 6px;
+}
+
+.events-flex-row::-webkit-scrollbar-thumb {
+    background: var(--accent-blue, #38bdf8);
+    border-radius: 10px;
+}
+
+.events-flex-row .ministry-card {
+    flex: 1 1 0px;
+    min-width: 170px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, z-index 0.25s;
+    position: relative;
+    z-index: 1;
+}
+
+.events-flex-row .ministry-card:hover {
+    transform: translateY(-6px) scale(1.05);
+    z-index: 10;
+    box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.4), 0 0 15px rgba(56, 189, 248, 0.2);
+}
+
+/* ==========================================================================
    10. MEDIA & RESOURCES HUB LAYOUTS
    ========================================================================== */
 
-/* Ensure Grid and Split Rows align items to start instead of stretching */
 .media-split-row,
 .dashboard-grid {
     align-items: start !important;
 }
 
-/* Keep panels and cards sized strictly to their inner content */
 .media-panel,
 .dashboard-card,
 .event-card {
     height: fit-content !important;
     align-self: flex-start !important;
-    flex: 0 0 auto !important; /* Prevents flex children from auto-growing */
+    flex: 0 0 auto !important;
 }
 
 .media-container {
@@ -822,7 +833,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     line-height: 1.6;
 }
 
-/* Streamlined Modern Grid Layout */
 .media-split-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -852,7 +862,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 }
 
-/* Decorative Badges */
 .panel-badge, .panel-badge-alt {
     align-self: flex-start;
     font-size: 0.75rem;
@@ -887,7 +896,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     margin-bottom: 20px;
 }
 
-/* Media Widget Placeholder Box Settings */
 .media-placeholder-box {
     background-color: var(--bg-light);
     border: 1px dashed #cbd5e1;
@@ -904,7 +912,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     border-color: #fca5a5;
 }
 
-/* Button CTA Rules for Media Panels */
 .btn-media-action {
     display: inline-block;
     text-align: center;
@@ -922,7 +929,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     background-color: #1e293b;
 }
 
-/* Full-Width Bible Reading Plan Banner Component */
 .reading-plan-banner {
     background: var(--bg-light);
     border: 1px solid #e2e8f0;
@@ -1019,7 +1025,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     margin: 40px 0;
 }
 
-/* Logistics Grid Side-by-Side */
 .logistics-card-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1046,7 +1051,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     margin-bottom: 10px;
 }
 
-/* Beliefs & Mission Styling */
 .mission-statement {
     text-align: center;
     font-size: 1.8rem;
@@ -1083,7 +1087,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     line-height: 1.6;
 }
 
-/* Staff Grid Container */
 .staff-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1092,7 +1095,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     margin: 0 auto;
 }
 
-/* Individual Profile Card */
 .staff-profile-card {
     background-color: var(--bg-white);
     border: 1px solid #e2e8f0;
@@ -1105,7 +1107,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     align-items: center;
 }
 
-/* Image Styling - Nested within the card context */
 .staff-profile-card .staff-photo {
     width: 150px !important;
     height: 150px !important;
@@ -1120,7 +1121,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     display: block !important;
 }
 
-/* Text and Role Styling */
 .staff-profile-card h4 {
     color: var(--primary-blue);
     font-size: 1.3rem;
@@ -1142,7 +1142,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
    ========================================================================== */
 .ticker-wrap {
     width: 100%;
-    background-color: #0f172a; /* Clean solid dark charcoal base */
+    background-color: #0f172a;
     padding: 14px 0;
     overflow: hidden;
     box-shadow: inset 0 -2px 4px rgba(0,0,0,0.15);
@@ -1152,7 +1152,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 .ticker-content {
     display: flex;
     white-space: nowrap;
-    animation: marqueeContinuous 160s linear infinite; /* Fixed naming mismatch space */
+    animation: marqueeContinuous 160s linear infinite;
 }
 
 .ticker-item {
@@ -1160,21 +1160,19 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     padding: 0 2rem;
     font-size: 0.95rem;
     font-weight: 500;
-    color: #f8fafc; /* Crisp, readable off-white text */
+    color: #f8fafc;
     letter-spacing: 0.025em;
 }
 
 .ticker-item strong {
-    color: #38bdf8; /* Highly visible light blue for emphasis */
+    color: #38bdf8;
 }
 
-/* Perfect, seamless no-gap loop animation */
 @keyframes marqueeContinuous {
     0% { transform: translateX(0%); }
     100% { transform: translateX(-50%); }
 }
 
-/* 2. Graphical Slideshow Carousel Styles */
 .slideshow-viewport {
     width: 100%;
     overflow-x: auto;
@@ -1216,8 +1214,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     padding: 40px;
 }
 
-/* Suttons Support Image */
-
 .suttons-support-image {
     margin-top: 25px;
     width: 100%;
@@ -1240,10 +1236,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     box-shadow: 0 15px 35px rgba(0,0,0,.30);
 }
 
-/* ==========================================================
-   SUTTONS MISSION HORIZONTAL IMAGE CAROUSEL
-   ========================================================== */
-
 .mission-gallery-section {
     width:100%;
     padding:40px 20px;
@@ -1257,10 +1249,9 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     align-items:center;
 }
 
-/* THE TRACK */
 .mission-gallery-scroll {
-    display:flex;                 /* THIS WAS MISSING */
-    flex-wrap:nowrap;             /* Prevents wrapping */
+    display:flex;
+    flex-wrap:nowrap;
     gap:20px;
     overflow-x:hidden;
     scroll-behavior:smooth;
@@ -1268,27 +1259,20 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     padding:35px 10px;
 }
 
-
-/* INDIVIDUAL PHOTOS */
 .mission-gallery-scroll img {
-    flex:0 0 260px;               /* Fixed card width */
+    flex:0 0 260px;
     width:260px;
     height:190px;
     object-fit:cover;
-
     border-radius:12px;
     box-shadow:0 6px 18px rgba(0,0,0,.18);
-
     transition:
         transform .35s ease,
         box-shadow .35s ease,
         filter .35s ease;
-
     cursor:pointer;
 }
 
-
-/* HOVER ZOOM */
 .mission-gallery-scroll img:hover {
     transform:scale(1.08)
     translateY(-8px);
@@ -1298,57 +1282,46 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     z-index:10;
 }
 
-
-/* ARROWS */
 .gallery-arrow {
     position:absolute;
     z-index:20;
-
     width:45px;
     height:45px;
-
     border:none;
     border-radius:50%;
-
     background:var(--primary-blue);
     color:white;
-
     font-size:24px;
     cursor:pointer;
-
     display:flex;
     align-items:center;
     justify-content:center;
 }
 
-
 .gallery-arrow.left {
     left:-20px;
 }
-
 
 .gallery-arrow.right {
     right:-20px;
 }
 
-
 .gallery-arrow:hover {
     background:var(--accent-blue);
 }
 
-/* 3. Layout Sync Utilities */
 .graphic-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
     margin: 30px 0;
 }
+
 .video-card-sync {
     background: #ffffff;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
 }
 .video-card-sync:hover {
     transform: translateY(-4px);
@@ -1446,41 +1419,39 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
    ========================== */
 .webmaster-actions {
     display: flex;
-    gap: 20px; /* Gives nice breathing room between buttons */
+    gap: 20px;
     flex-wrap: wrap;
     margin-top: 25px;
 }
 
-/* Individual button spacing and padding */
 .btn-webmaster, 
 .btn-webmaster-sub, 
 .btn-secondary {
-    padding: 12px 20px;   /* Internal breathing room inside the buttons */
-    margin-bottom: 10px;  /* Adds breathing room underneath each button when they wrap */
+    padding: 12px 20px;
+    margin-bottom: 10px;
     border-radius: 6px;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
-    color: white;         /* Ensures button text is white */
+    color: white;
 }
 
-/* Base Colors and Hover States */
 .btn-webmaster {
-    background-color: #d97706; /* Amber/Orange */
+    background-color: #d97706;
 }
 .btn-webmaster:hover { 
     background-color: #b45309; 
 }
 
 .btn-webmaster-sub {
-    background-color: #0284c7; /* Blue */
+    background-color: #0284c7;
 }
 .btn-webmaster-sub:hover {
     background-color: #0369a1;
 }
 
 .btn-secondary {
-    background-color: #0f172a; /* Dark Navy */
+    background-color: #0f172a;
 }
 .btn-secondary:hover { 
     background-color: #1e293b; 
@@ -1526,7 +1497,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     margin-bottom: 20px;
 }
 
-/* Badge Styles */
 .event-badge {
     font-size: 0.75rem;
     font-weight: 700;
@@ -1547,7 +1517,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     color: #475569;
 }
 
-/* Event Specific Buttons & Banners */
 .event-action-btn {
     margin-top: auto;
     text-align: center;
@@ -1570,11 +1539,10 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     color: #334155;
 }
 
-/* Ensure Hero Viewport Text is Always High-Contrast White */
 .hero-viewport h1,
 .hero-viewport p,
 .hero-content h1,
 .hero-content p {
     color: #ffffff !important;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Adds extra readability over image overlays */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
