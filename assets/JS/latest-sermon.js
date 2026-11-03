@@ -1,7 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-        fetch("/data/latest-sermon.json")
-        .then(response => response.json())
+    // Automatically detects if running in a subfolder repo or root domain
+    const repoPrefix = window.location.hostname.includes('github.io') 
+        ? (window.location.pathname.split('/')[1] ? '/' + window.location.pathname.split('/')[1] + '/' : '/') 
+        : '/';
+
+    fetch(repoPrefix + "data/latest-sermon.json")
+        .then(response => {
+            if (!response.ok) throw new Error("HTTP error! status: " + response.status);
+            return response.json();
+        })
         .then(sermon => {
 
             const title = document.getElementById("sermon-title");
@@ -11,34 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
             const link = document.getElementById("sermon-link");
             const thumbnail = document.getElementById("sermon-thumbnail");
 
-
-            if (title) {
-                title.textContent = sermon.title;
-            }
-
-            if (speaker) {
-                speaker.textContent = sermon.speaker;
-            }
-
-            if (scripture) {
-                scripture.textContent = sermon.scripture;
-            }
-
-            if (date) {
-                date.textContent = "📅 " + sermon.published;
-            }
-
-            if (link) {
-                link.href = sermon.url;
-            }
-
+            if (title) title.textContent = sermon.title;
+            if (speaker) speaker.textContent = sermon.speaker;
+            if (scripture) scripture.textContent = sermon.scripture;
+            if (date) date.textContent = "📅 " + sermon.published;
+            if (link) link.href = sermon.url;
             if (thumbnail) {
                 thumbnail.style.backgroundImage =
                 `linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.4)), url(${sermon.thumbnail})`;
             }
 
         })
-
         .catch(error => {
             console.error("Sermon loading error:", error);
         });
