@@ -1610,11 +1610,17 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 /* ==========================================================================
    EVENT CARD SYSTEM & MODIFIERS
    ========================================================================== */
-/* Ensure the parent grid/container stretches items to equal height */
+
+/* 1. Add grid gap so cards don't touch, and keep items stretching equally */
 .ministries-container, .events-grid {
     display: grid;
-    align-items: stretch; /* Forces all grid cards to match the tallest card's height */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Adjust based on your layout columns */
+    gap: 30px; /* 👈 This adds breathing room/spacing between all containers */
+    justify-items: center; 
+    align-items: stretch; /* Forces all cards in a row to match height */
 }
+
+/* 2. Event card container */
 .event-card {
     background-color: var(--bg-white);
     border: 1px solid #e2e8f0;
@@ -1625,11 +1631,11 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     box-shadow: var(--card-shadow);
     transition: var(--transition-smooth);
     
-    
-    /* 👇 Add padding at the top of the container card */
-    width: fit-content;
+    width: 100%;       /* 👈 Fill the grid column width uniformly */
+    max-width: 360px;  /* 👈 Caps the max width so they don't stretch too wide */
     margin: 0 auto;
     padding-top: 20px; 
+    height: 100%;      /* 👈 Ensures full stretch to match row height */
 }
 
 .event-card img {
@@ -1639,8 +1645,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     display: block;
     margin: 0 auto;
     object-fit: cover;
-    
-    /* 👇 Optional: round the top corners of the image if you want */
     border-radius: var(--radius-md); 
 }
 
@@ -1648,7 +1652,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     padding: 25px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 1; /* 👈 Forces the body to fill available vertical space uniformly */
 }
 
 .event-card h3 {
@@ -1685,7 +1689,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 }
 
 .event-action-btn {
-    margin-top: auto;
+    margin-top: auto; /* Pushes button to bottom */
     text-align: center;
     display: block;
     text-decoration: none;
@@ -1696,7 +1700,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 }
 
 .event-concluded-banner {
-    margin-top: auto;
+    margin-top: auto; /* Pushes banner to bottom uniformly across cards */
     padding: 10px;
     background: #e2e8f0;
     text-align: center;
@@ -1705,7 +1709,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     font-weight: 600;
     color: #334155;
 }
-
 .hero-viewport h1,
 .hero-viewport p,
 .hero-content h1,
