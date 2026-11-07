@@ -1613,18 +1613,17 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 
    ========================================================================== */
 
-.event-card {
+ .event-card {
     background-color: var(--bg-white);
     border: 1px solid #e2e8f0;
     border-radius: var(--radius-lg);
     overflow: hidden;
     display: flex;
-    flex-direction: row;   /* Changed from column to row */
-    align-items: center;   /* Vertically aligns image and text */
+    flex-direction: column;
     box-shadow: var(--card-shadow);
     transition: var(--transition-smooth);
-    padding: 15px;         /* Adds breathing room inside the card */
-}
+    
+} 
 
 .event-card img {
     width: 220px;          /* Controls the smaller image size */
