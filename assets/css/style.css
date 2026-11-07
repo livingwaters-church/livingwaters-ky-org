@@ -1692,14 +1692,16 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 
 .event-concluded-banner {
     margin-top: auto;
-    padding: 10px;
+    padding: 10px 16px;       /* Balanced padding so it's not too tall */
     background: #e2e8f0;
     text-align: center;
     border-radius: 6px;
     font-size: 0.85rem;
     font-weight: 600;
     color: #334155;
-} 
+    box-sizing: border-box;
+    width: 100%;             /* Ensures predictable sizing inside the flex body */
+}
 
 .hero-viewport h1,
 .hero-viewport p,
