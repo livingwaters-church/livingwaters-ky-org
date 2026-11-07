@@ -1622,17 +1622,22 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     transition: var(--transition-smooth);
     
     width: fit-content;
-    margin: 0 auto; /* <-- This centers the card itself horizontally */
+    margin: 0 auto;
+    
+    /* 👇 Add padding at the top of the container card */
+    padding-top: 20px; 
 }
 
-/* 2. Center the image inside the card container */
 .event-card img {
     max-width: 300px;
     width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* <-- This centers the image inside the card padding */
+    margin: 0 auto;
     object-fit: cover;
+    
+    /* 👇 Optional: round the top corners of the image if you want */
+    border-radius: var(--radius-md); 
 }
 
 .event-card-body {
