@@ -1608,19 +1608,34 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 }
 
 /* ==========================================================================
-   EVENT CARD SYSTEM & MODIFIERS
+   EVENT CARD SYSTEM & MODIFIERS (FIXED LAYOUT)
    ========================================================================== */
 
-/* 1. Add grid gap so cards don't touch, and keep items stretching equally */
+/* 1. Parent Grid Fix: Clean 3-column layout with consistent spacing */
 .ministries-container, .events-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Adjust based on your layout columns */
-    gap: 30px; /* 👈 This adds breathing room/spacing between all containers */
-    justify-items: center; 
-    align-items: stretch; /* Forces all cards in a row to match height */
+    grid-template-columns: repeat(3, 1fr); /* Forces a stable 3-column layout side-by-side */
+    gap: 30px;                             /* Adds breathing room between containers */
+    align-items: stretch;                  /* Keeps cards matching height per row */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* 2. Event card container */
+/* Responsive fallback for smaller screens/tablets */
+@media (max-width: 900px) {
+    .ministries-container, .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .ministries-container, .events-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 2. Event Card Container */
 .event-card {
     background-color: var(--bg-white);
     border: 1px solid #e2e8f0;
@@ -1631,28 +1646,29 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     box-shadow: var(--card-shadow);
     transition: var(--transition-smooth);
     
-    width: 100%;       /* 👈 Fill the grid column width uniformly */
-    max-width: 360px;  /* 👈 Caps the max width so they don't stretch too wide */
-    margin: 0 auto;
-    padding-top: 20px; 
-    height: 100%;      /* 👈 Ensures full stretch to match row height */
+    width: 100%;       /* Fills the clean grid column equally */
+    margin: 0;         /* Clears conflicting margins */
+    padding-top: 20px; /* Top breathing room for the image */
+    height: 100%;      /* Ensures full card stretch */
 }
 
+/* 3. Image Styling & Centering */
 .event-card img {
-    max-width: 300px;
+    max-width: 260px;  /* Keeps the image neat and compact */
     width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto;    /* Centers image horizontally in the card */
     object-fit: cover;
     border-radius: var(--radius-md); 
 }
 
+/* 4. Card Body & Content Spacing */
 .event-card-body {
     padding: 25px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* 👈 Forces the body to fill available vertical space uniformly */
+    flex-grow: 1; /* Pushes action buttons/banners consistently to the bottom */
 }
 
 .event-card h3 {
@@ -1689,7 +1705,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 }
 
 .event-action-btn {
-    margin-top: auto; /* Pushes button to bottom */
+    margin-top: auto;
     text-align: center;
     display: block;
     text-decoration: none;
@@ -1700,7 +1716,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 }
 
 .event-concluded-banner {
-    margin-top: auto; /* Pushes banner to bottom uniformly across cards */
+    margin-top: auto;
     padding: 10px;
     background: #e2e8f0;
     text-align: center;
@@ -1709,6 +1725,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     font-weight: 600;
     color: #334155;
 }
+
 .hero-viewport h1,
 .hero-viewport p,
 .hero-content h1,
