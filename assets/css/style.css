@@ -1610,6 +1610,12 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 /* ==========================================================================
    EVENT CARD SYSTEM & MODIFIERS
    ========================================================================== */
+/* Ensure the parent grid/container stretches items to equal height */
+.ministries-container, .events-grid {
+    display: grid;
+    align-items: stretch; /* Forces all grid cards to match the tallest card's height */
+}
+
 /* 1. Center the entire event card container within your grid/flex parent */
 .event-card {
     background-color: var(--bg-white);
@@ -1620,8 +1626,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     flex-direction: column;
     box-shadow: var(--card-shadow);
     transition: var(--transition-smooth);
-    
-    width: fit-content;
     margin: 0 auto;
     
     /* 👇 Add padding at the top of the container card */
