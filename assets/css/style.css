@@ -1619,24 +1619,18 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     border-radius: var(--radius-lg);
     overflow: hidden;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;   /* Changed from column to row */
+    align-items: center;   /* Vertically aligns image and text */
     box-shadow: var(--card-shadow);
     transition: var(--transition-smooth);
-    padding: 15px;
-
-   /* 👇 Add these two lines to shrink-wrap and center the card */
-    width: fit-content;
-    margin: 0 auto;
+    padding: 15px;         /* Adds breathing room inside the card */
 }
 
 .event-card img {
-    max-width: 280px;      /* Set your desired size limit */
-    /*width: 100%;            Keeps it responsive on small mobile screens */
+    width: 220px;          /* Controls the smaller image size */
     height: auto;
-    display: block;
-    flex-shrink: 0;
-    margin: 20px auto 0;   /*Centers the image and adds space at the top */
-    border-radius: var(--radius-lg); /* Optional: rounds image corners slightly */
+    flex-shrink: 0;        /* Prevents the image from squeezing */
+    border-radius: 8px;
 }
 
 .event-card-body {
