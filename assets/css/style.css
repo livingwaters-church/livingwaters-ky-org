@@ -1608,34 +1608,11 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 }
 
 /* ==========================================================================
-   EVENT CARD SYSTEM & MODIFIERS (FIXED LAYOUT)
+
+   EVENT CARD SYSTEM & MODIFIERS
+
    ========================================================================== */
 
-/* 1. Parent Grid Fix: Clean 3-column layout with consistent spacing */
-.ministries-container, .events-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Forces a stable 3-column layout side-by-side */
-    gap: 30px;                             /* Adds breathing room between containers */
-    align-items: stretch;                  /* Keeps cards matching height per row */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Responsive fallback for smaller screens/tablets */
-@media (max-width: 900px) {
-    .ministries-container, .events-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .ministries-container, .events-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* 2. Event Card Container */
 .event-card {
     background-color: var(--bg-white);
     border: 1px solid #e2e8f0;
@@ -1645,30 +1622,24 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     flex-direction: column;
     box-shadow: var(--card-shadow);
     transition: var(--transition-smooth);
-    
-    width: 100%;       /* Fills the clean grid column equally */
-    margin: 0;         /* Clears conflicting margins */
-    padding-top: 20px; /* Top breathing room for the image */
-    height: 100%;      /* Ensures full card stretch */
+    padding: 15px;
 }
 
-/* 3. Image Styling & Centering */
 .event-card img {
-    max-width: 260px;  /* Keeps the image neat and compact */
-    width: 100%;
+    max-width: 220px;      /* Set your desired size limit */
+    /*width: 100%;            Keeps it responsive on small mobile screens */
     height: auto;
     display: block;
-    margin: 0 auto;    /* Centers image horizontally in the card */
-    object-fit: cover;
-    border-radius: var(--radius-md); 
+    flex-shrink: 0;
+    /*margin: 20px auto 0;   Centers the image and adds space at the top */
+    border-radius: 8px; /* Optional: rounds image corners slightly */
 }
 
-/* 4. Card Body & Content Spacing */
 .event-card-body {
     padding: 25px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Pushes action buttons/banners consistently to the bottom */
+    flex-grow: 1;
 }
 
 .event-card h3 {
@@ -1724,7 +1695,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     font-size: 0.85rem;
     font-weight: 600;
     color: #334155;
-}
+} 
 
 .hero-viewport h1,
 .hero-viewport p,
