@@ -1626,13 +1626,13 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 }
 
 .event-card img {
-    max-width: 220px;      /* Set your desired size limit */
+    max-width: 280px;      /* Set your desired size limit */
     /*width: 100%;            Keeps it responsive on small mobile screens */
     height: auto;
     display: block;
     flex-shrink: 0;
-    /*margin: 20px auto 0;   Centers the image and adds space at the top */
-    border-radius: 8px; /* Optional: rounds image corners slightly */
+    margin: 20px auto 0;   /*Centers the image and adds space at the top */
+    border-radius: var(--radius-lg); /* Optional: rounds image corners slightly */
 }
 
 .event-card-body {
