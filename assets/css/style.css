@@ -1623,6 +1623,10 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     box-shadow: var(--card-shadow);
     transition: var(--transition-smooth);
     padding: 15px;
+
+   /* 👇 Add these two lines to shrink-wrap and center the card */
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .event-card img {
