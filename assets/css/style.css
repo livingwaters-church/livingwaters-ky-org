@@ -1615,8 +1615,6 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     display: grid;
     align-items: stretch; /* Forces all grid cards to match the tallest card's height */
 }
-
-/* 1. Center the entire event card container within your grid/flex parent */
 .event-card {
     background-color: var(--bg-white);
     border: 1px solid #e2e8f0;
@@ -1626,9 +1624,11 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     flex-direction: column;
     box-shadow: var(--card-shadow);
     transition: var(--transition-smooth);
-    margin: 0 auto;
+    
     
     /* 👇 Add padding at the top of the container card */
+    width: fit-content;
+    margin: 0 auto;
     padding-top: 20px; 
 }
 
