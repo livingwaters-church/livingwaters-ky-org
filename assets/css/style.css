@@ -1610,6 +1610,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 /* ==========================================================================
    EVENT CARD SYSTEM & MODIFIERS
    ========================================================================== */
+/* 1. Center the entire event card container within your grid/flex parent */
 .event-card {
     background-color: var(--bg-white);
     border: 1px solid #e2e8f0;
@@ -1620,16 +1621,17 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     box-shadow: var(--card-shadow);
     transition: var(--transition-smooth);
     
-    /* 👇 Add these two lines to shrink-wrap and center the card */
     width: fit-content;
-    margin: 0 auto;
+    margin: 0 auto; /* <-- This centers the card itself horizontally */
 }
 
+/* 2. Center the image inside the card container */
 .event-card img {
-    max-width: 300px; /* Controls the image width */
-    width: 100%;       /* Keeps it responsive on smaller screens */
+    max-width: 300px;
+    width: 100%;
     height: auto;
     display: block;
+    margin: 0 auto; /* <-- This centers the image inside the card padding */
     object-fit: cover;
 }
 
