@@ -75,10 +75,10 @@
         <p style="margin-bottom: 30px;"><a href="index.html" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">&larr; Back to All Ministries</a></p>
 
        <!-- TWO COLUMN DETAILS LAYOUT -->
-        <div class="media-split-row">
+        <div class="media-split-row" style="align-items: flex-start; gap: 30px;">
             
            <!-- Left Column: Core Program Details & Update Links -->
-        <div class="media-panel" style="flex: 2;">
+           <div class="media-panel" style="flex: 1.2;">
             <h3>Church Planting in Utah</h3>
             <p>The Sutton family serves as our primary missionary partners on the ground in Utah—one of the least evangelical states in the country. From supporting local works like Redemption Bear River in Tremonton to organizing community group outreaches in Syracuse, Living Waters stands directly with them through prayer, short-term team deployments, and financial funding.</p>
             
@@ -102,17 +102,17 @@
             </div>
 
             <!-- NEW CONTAINER: CHURCH PLANTING & COLLAGE FEATURE -->
-            <div style="background: var(--bg-light); border: 1px solid var(--card-border); border-radius: 10px; padding: 25px; margin: 25px 0; display: flex; flex-direction: column; md-flex-direction: row; gap: 25px; align-items: flex-start;">
+            <div style="background: var(--bg-light); border: 1px solid var(--card-border); border-radius: 10px; padding: 25px; margin: 25px 0; display: flex; flex-direction: column; gap: 25px; align-items: flex-start;">
                 
                 <!-- Collage Image -->
-                <div style="flex: 1; width: 100%; text-align: center;">
+                <div style="width: 100%; text-align: center;">
                     <img src="../assets/images/ministries/suttons/suttons-collage.jpeg" 
                          alt="Suttons on Mission Ministry Collage" 
                          style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,.1); display: block;">
                 </div>
         
                 <!-- Text & Focus Points -->
-                <div style="flex: 1.2;">
+                <div style="width: 100%;">
                     <h4 style="color: var(--primary-blue); margin-top: 0; margin-bottom: 6px; font-size: 1.2rem;">
                         Church Planting in Utah
                     </h4>
@@ -135,307 +135,131 @@
                 </div>
         
             </div>
-
-                <!-- FEATURED MISSIONARY NEWSLETTER -->
-                <h4 style="color: var(--primary-blue); margin:25px 0 10px;">
-                    Latest Missionary Update
-                </h4>
-                
-                <div class="media-placeholder-box"
-                     style="text-align:center;
-                            padding:30px;
-                            background:var(--bg-light);
-                            border:2px solid var(--accent-blue);
-                            border-radius:10px;">
-                
-               <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
-                    <!-- Page 1 Thumbnail Preview -->
-                    <img src="../assets/docs/suttons/som-newsletter-october-2026-1.png"
-                         alt="October 2026 Page 1 Preview"
-                         style="width: 220px; height: auto; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,.18);">
+        </div>
+            
+        <!-- RIGHT COLUMN: Latest Missionary Update, Prayer Requests, Support Links, Archive & Contact -->
+        <div class="prayer-requests-container" style="flex: 1; background: var(--bg-light); border-radius: 12px; padding: 25px; border: 1px solid var(--card-border);">
+            
+            <!-- FEATURED MISSIONARY NEWSLETTER (Top Eye-Catcher) -->
+            <h4 style="color: var(--primary-blue); margin: 0 0 10px;">
+                Latest Missionary Update
+            </h4>
+            
+            <div class="media-placeholder-box" style="text-align: center; padding: 20px; background: var(--bg-white); border: 2px solid var(--accent-blue); border-radius: 10px; margin-bottom: 25px;">
+                <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+                    <img src="../assets/docs/suttons/som-newsletter-october-2026-1.png" alt="October 2026 Page 1 Preview" style="width: 160px; height: auto; border-radius: 8px; box-shadow: 0 6px 16px rgba(0,0,0,.15);">
                 </div>
                 
-                <h4 style="margin-bottom:10px; color:var(--primary-blue);">
+                <h4 style="margin-bottom: 8px; color: var(--primary-blue);">
                     October 2026 Newsletter
                 </h4>
                 
-                <p style="margin-bottom:20px; font-size:0.95rem; color:var(--text-muted);">
-                    Read the latest ministry updates, church planting progress,
-                    prayer requests, and outreach opportunities from the Sutton family.
+                <p style="margin-bottom: 15px; font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                    Read the latest ministry updates, church planting progress, prayer requests, and outreach opportunities from the Sutton family.
                 </p>
                 
-                <a href="../assets/docs/suttons/som-newsletter-october-2026.pdf"
-                   target="_blank"
-                   class="btn-media-action"
-                   style="background-color:var(--accent-blue); display:inline-block;">
+                <a href="../assets/docs/suttons/som-newsletter-october-2026.pdf" target="_blank" class="btn-media-action" style="background-color: var(--accent-blue); display: inline-block;">
                     📄 View October Newsletter (PDF)
                 </a>
-                </div>
-    
-                <!-- NEWSLETTER ARCHIVE -->
-                <h4 style="color:var(--primary-blue); margin:35px 0 15px;">
-                    Past Newsletters
-                </h4>
-                
-                <p style="font-size:.9rem; color:var(--text-muted); margin-bottom:20px;">
-                    Browse previous ministry newsletters and prayer updates.
-                </p>
-                
-                <div style="display:grid;
-                            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-                            gap:20px;">
-                    
-                   
-                     <!-- September Newsletter -->
-                    <div style="background:var(--bg-white);
-                                border:1px solid var(--card-border);
-                                border-radius:10px;
-                                padding:20px;
-                                text-align:center;
-                                box-shadow:0 2px 8px rgba(0,0,0,.05);">
-                    
-                        <img src="../assets/docs/suttons/som-newsletter-2026-9-1.png"
-                             alt="September 2026 Suttons Newsletter"
-                             style="width:180px;
-                                    height:auto;
-                                    border-radius:6px;
-                                    margin-bottom:15px;">
-                    
-                        <h4 style="margin-bottom:12px; color:var(--primary-blue);">
-                            September 2026
-                        </h4>
-                    
-                        <a href="../assets/docs/suttons/som-newsletter-2026-9.pdf"
-                           target="_blank"
-                           class="btn-media-action"
-                           style="display:inline-block;">
-                            📄 View PDF
-                        </a>
-                    </div>
-                    
-                    <!-- August Newsletter -->
-                    <div style="background:var(--bg-white);
-                                border:1px solid var(--card-border);
-                                border-radius:10px;
-                                padding:20px;
-                                text-align:center;
-                                box-shadow:0 2px 8px rgba(0,0,0,.05);">
-                    
-                        <img src="../assets/docs/suttons/som_newsletter_ Aug_2026-1.png"
-                             alt="August 2026 Suttons Newsletter"
-                             style="width:180px;
-                                    height:auto;
-                                    border-radius:6px;
-                                    margin-bottom:15px;">
-                    
-                        <h4 style="margin-bottom:12px; color:var(--primary-blue);">
-                            August 2026
-                        </h4>
-                    
-                        <a href="../assets/docs/suttons/som-newsletter-2026-8.pdf"
-                           target="_blank"
-                           class="btn-media-action"
-                           style="display:inline-block;">
-                            📄 View PDF
-                        </a>
-                    </div>
+            </div>
 
-                    <!-- July Newsletter -->
-                    <div style="background:var(--bg-white);
-                                border:1px solid var(--card-border);
-                                border-radius:10px;
-                                padding:20px;
-                                text-align:center;
-                                box-shadow:0 2px 8px rgba(0,0,0,.05);">
-                    
-                        <img src="../assets/docs/suttons/som-newsletter- july-2026-1.png"
-                            alt="July 2026 Suttons Newsletter"
-                            style="width:180px;
-                                   height:auto;
-                                   border-radius:6px;
-                                   margin-bottom:15px;">
-                    
-                        <h4 style="margin-bottom:12px; color:var(--primary-blue);">
-                            July 2026
-                        </h4>
-                    
-                        <a href="../assets/docs/suttons/som-newsletter-2026-6.pdf"
-                           target="_blank"
-                           class="btn-media-action"
-                           style="display:inline-block;">
-                            📄 View PDF
-                        </a>
-                    </div>
+            <!-- SECTION 2: Praises & Prayer Requests -->
+            <div style="background: #e2ebd8; border: 1px solid var(--card-border); border-radius: 10px; padding: 22px; margin-bottom: 25px; box-shadow: 0 1px 3px rgba(0,0,0,0.02); text-align: center;">
                 
-                    <!-- June Newsletter -->
-                    <div style="background:var(--bg-white);
-                                border:1px solid var(--card-border);
-                                border-radius:10px;
-                                padding:20px;
-                                text-align:center;
-                                box-shadow:0 2px 8px rgba(0,0,0,.05);">
-                    
-                        <img src="../assets/docs/suttons/som-newsletter-june-2026-1.png"
-                            alt="June 2026 Suttons Newsletter"
-                            style="width:180px;
-                                   height:auto;
-                                   border-radius:6px;
-                                   margin-bottom:15px;">
-                    
-                        <h4 style="margin-bottom:12px; color:var(--primary-blue);">
-                            June 2026
-                        </h4>
-                    
-                        <a href="../assets/docs/suttons/som-newsletter-2026-6.pdf"
-                           target="_blank"
-                           class="btn-media-action"
-                           style="display:inline-block;">
-                            📄 View PDF
-                        </a>
-                    </div>
-                </div> <!-- End of Past Newsletters Grid -->
+                <!-- Header Title -->
+                <h3 style="color: #3b5332; font-size: 1.25rem; font-weight: 700; margin-top: 0; margin-bottom: 12px; text-decoration: underline; text-underline-offset: 4px;">
+                    Praises &amp; Prayer Requests
+                </h3>
+                
+                <!-- Praying Hands Icon -->
+                <div style="margin-bottom: 16px; color: #3b5332; font-size: 1.6rem;">
+                    <i class="fa-solid fa-hands-praying"></i>
+                </div>
+            
+                <!-- Bulleted Prayer List -->
+                <ul style="list-style-type: disc; text-align: left; padding-left: 20px; margin: 0; display: flex; flex-direction: column; gap: 12px; color: var(--text-main); font-size: 0.92rem; line-height: 1.5;">
+                    <li>Pray for Andrew as he travels back east to touch base with supporters and create new support connections for Redemption Lakeside[cite: 1].</li>
+                    <li>Continue praying for the Paulk family[cite: 1].</li>
+                    <li>Continue to pray that we are able to find a meeting place for Redemption Lakeside, as well as the financial support to sustain it[cite: 1].</li>
+                    <li>Continue praying for the Syracuse community group[cite: 1].</li>
+                    <li>Praise for the mission team from Crossroads Fellowship in Cadiz, KY[cite: 1].</li>
+                </ul>
             </div>
             
-    
-    <!-- RIGHT COLUMN: Prayer Requests, Support Links, Latest Newsletter, Archive & Contact -->
-            <div class="prayer-requests-container" style="flex: 1; background: var(--bg-light); border-radius: 12px; padding: 25px; border: 1px solid var(--card-border);">
-                
-                <!-- SECTION 1: Current / Immediate Requests -->
-                <div style="background: var(--bg-white); border: 1px solid var(--card-border); border-radius: 10px; padding: 18px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
-                    <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary-blue); margin-bottom: 14px; display: flex; align-items: center; gap: 6px; border-bottom: 2px solid var(--bg-light); padding-bottom: 8px;">
-                        <i class="fa-solid fa-bolt" style="color: #3b82f6;"></i> Praises &amp; Prayer Requests
-                    </div>
-                
-                    <div style="display: flex; flex-direction: column; gap: 10px;">
-                        <!-- Item 1 -->
-                        <div style="background: var(--bg-light); padding: 12px 14px; border-radius: 6px; border-left: 4px solid #3b82f6;">
-                            <strong style="color: var(--text-main); display: block; margin-bottom: 2px;">Andrew's Support Raising Trip</strong>
-                            <span style="color: var(--text-muted); font-size: 0.92rem;">Pray for Andrew as he travels back east to touch base with supporters and create new support connections for Redemption Lakeside.</span>
-                        </div>
-                
-                        <!-- Item 2 -->
-                        <div style="background: var(--bg-light); padding: 12px 14px; border-radius: 6px; border-left: 4px solid #10b981;">
-                            <strong style="color: var(--text-main); display: block; margin-bottom: 2px;">Planting Team</strong>
-                            <span style="color: var(--text-muted); font-size: 0.92rem;">Continue praying for the Paulk family.</span>
-                        </div>
-                
-                        <!-- Item 3 -->
-                        <div style="background: var(--bg-light); padding: 12px 14px; border-radius: 6px; border-left: 4px solid #f59e0b;">
-                            <strong style="color: var(--text-main); display: block; margin-bottom: 2px;">Redemption Lakeside</strong>
-                            <span style="color: var(--text-muted); font-size: 0.92rem;">Continue to pray that we are able to find a meeting place for Redemption Lakeside, as well as the financial support to sustain it.</span>
-                        </div>
-                
-                        <!-- Item 4 -->
-                        <div style="background: var(--bg-light); padding: 12px 14px; border-radius: 6px; border-left: 4px solid #8b5cf6;">
-                            <strong style="color: var(--text-main); display: block; margin-bottom: 2px;">Syracuse Community Group</strong>
-                            <span style="color: var(--text-muted); font-size: 0.92rem;">Continue praying for the Syracuse community group.</span>
-                        </div>
-                
-                        <!-- Item 5 -->
-                        <div style="background: var(--bg-light); padding: 12px 14px; border-radius: 6px; border-left: 4px solid #ec4899;">
-                            <strong style="color: var(--text-main); display: block; margin-bottom: 2px;">Crossroads Fellowship Mission Team</strong>
-                            <span style="color: var(--text-muted); font-size: 0.92rem;">Praise for the mission team from Crossroads Fellowship in Cadiz, KY.</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- SUPPORT / JOIN US SECTION -->
-                <div style="background: var(--bg-white); padding: 20px; border-radius: 10px; border: 1px solid var(--card-border); text-align: center; margin-bottom: 25px;">
-                    <h4 style="font-size: 1.1rem; color: var(--primary-blue); margin-top: 0; margin-bottom: 8px;">Join Our Support Team</h4>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">
-                        Partner with the Suttons to bring the message of the Gospel to the Utah Valley.
-                    </p>
-
-                    <a href="../donate/index.html" class="btn-media-action" style="display: block; width: 100%; text-align: center; margin-bottom: 10px; box-sizing: border-box;">
-                        Give (Select "Suttons on Mission")
-                    </a>
-
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoyo_COeugQXArywLtsKZQe6q9wBG5R8JaxvpheNtBK79_oQ/viewform" target="_blank" class="btn-media-action" style="display: block; width: 100%; text-align: center; background-color: var(--accent-blue); color: #fff; text-decoration: none; padding: 10px; border-radius: 6px; font-weight: 600; box-sizing: border-box;">
-                        Connect with the Suttons
-                    </a>
-                </div>
-
-                <!-- FEATURED MISSIONARY NEWSLETTER -->
-                <h4 style="color: var(--primary-blue); margin: 0 0 10px;">
-                    Latest Missionary Update
-                </h4>
-                
-                <div class="media-placeholder-box" style="text-align: center; padding: 20px; background: var(--bg-white); border: 2px solid var(--accent-blue); border-radius: 10px; margin-bottom: 25px;">
-                    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-                        <img src="../assets/docs/suttons/som-newsletter-october-2026-1.png" alt="October 2026 Page 1 Preview" style="width: 160px; height: auto; border-radius: 8px; box-shadow: 0 6px 16px rgba(0,0,0,.15);">
-                    </div>
-                    
-                    <h4 style="margin-bottom: 8px; color: var(--primary-blue);">
-                        October 2026 Newsletter
-                    </h4>
-                    
-                    <p style="margin-bottom: 15px; font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
-                        Read the latest ministry updates, church planting progress, prayer requests, and outreach opportunities from the Sutton family.
-                    </p>
-                    
-                    <a href="../assets/docs/suttons/som-newsletter-october-2026.pdf" target="_blank" class="btn-media-action" style="background-color: var(--accent-blue); display: inline-block;">
-                        📄 View October Newsletter (PDF)
-                    </a>
-                </div>
-
-                <!-- NEWSLETTER ARCHIVE -->
-                <h4 style="color: var(--primary-blue); margin: 0 0 10px;">
-                    Past Newsletters
-                </h4>
-                
+            <!-- SUPPORT / JOIN US SECTION -->
+            <div style="background: var(--bg-white); padding: 20px; border-radius: 10px; border: 1px solid var(--card-border); text-align: center; margin-bottom: 25px;">
+                <h4 style="font-size: 1.1rem; color: var(--primary-blue); margin-top: 0; margin-bottom: 8px;">Join Our Support Team</h4>
                 <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">
-                    Browse previous ministry newsletters and prayer updates.
+                    Partner with the Suttons to bring the message of the Gospel to the Utah Valley.
                 </p>
+
+                <a href="../donate/index.html" class="btn-media-action" style="display: block; width: 100%; text-align: center; margin-bottom: 10px; box-sizing: border-box;">
+                    Give (Select "Suttons on Mission")
+                </a>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoyo_COeugQXArywLtsKZQe6q9wBG5R8JaxvpheNtBK79_oQ/viewform" target="_blank" class="btn-media-action" style="display: block; width: 100%; text-align: center; background-color: var(--accent-blue); color: #fff; text-decoration: none; padding: 10px; border-radius: 6px; font-weight: 600; box-sizing: border-box;">
+                    Connect with the Suttons
+                </a>
+            </div>
+
+            <!-- NEWSLETTER ARCHIVE -->
+            <h4 style="color: var(--primary-blue); margin: 0 0 10px;">
+                Past Newsletters
+            </h4>
+            
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">
+                Browse previous ministry newsletters and prayer updates.
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 25px;">
                 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 25px;">
-                    
-                    <!-- September Newsletter -->
-                    <div style="background: var(--bg-white); border: 1px solid var(--card-border); border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,.04);">
-                        <img src="../assets/docs/suttons/som-newsletter-2026-9-1.png" alt="September 2026 Suttons Newsletter" style="width: 100%; max-width: 120px; height: auto; border-radius: 4px; margin-bottom: 10px;">
-                        <h5 style="margin: 0 0 8px; color: var(--primary-blue); font-size: 0.9rem;">September 2026</h5>
-                        <a href="../assets/docs/suttons/som-newsletter-2026-9.pdf" target="_blank" class="btn-media-action" style="display: inline-block; padding: 6px 10px; font-size: 0.8rem;">
-                            📄 View PDF
-                        </a>
-                    </div>
-                    
-                    <!-- August Newsletter -->
-                    <div style="background: var(--bg-white); border: 1px solid var(--card-border); border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,.04);">
-                        <img src="../assets/docs/suttons/som_newsletter_ Aug_2026-1.png" alt="August 2026 Suttons Newsletter" style="width: 100%; max-width: 120px; height: auto; border-radius: 4px; margin-bottom: 10px;">
-                        <h5 style="margin: 0 0 8px; color: var(--primary-blue); font-size: 0.9rem;">August 2026</h5>
-                        <a href="../assets/docs/suttons/som-newsletter-2026-8.pdf" target="_blank" class="btn-media-action" style="display: inline-block; padding: 6px 10px; font-size: 0.8rem;">
-                            📄 View PDF
-                        </a>
-                    </div>
-
-                    <!-- July Newsletter -->
-                    <div style="background: var(--bg-white); border: 1px solid var(--card-border); border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,.04);">
-                        <img src="../assets/docs/suttons/som-newsletter- july-2026-1.png" alt="July 2026 Suttons Newsletter" style="width: 100%; max-width: 120px; height: auto; border-radius: 4px; margin-bottom: 10px;">
-                        <h5 style="margin: 0 0 8px; color: var(--primary-blue); font-size: 0.9rem;">July 2026</h5>
-                        <a href="../assets/docs/suttons/som-newsletter-2026-7.pdf" target="_blank" class="btn-media-action" style="display: inline-block; padding: 6px 10px; font-size: 0.8rem;">
-                            📄 View PDF
-                        </a>
-                    </div>
-
-                    <!-- June Newsletter -->
-                    <div style="background: var(--bg-white); border: 1px solid var(--card-border); border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,.04);">
-                        <img src="../assets/docs/suttons/som-newsletter-june-2026-1.png" alt="June 2026 Suttons Newsletter" style="width: 100%; max-width: 120px; height: auto; border-radius: 4px; margin-bottom: 10px;">
-                        <h5 style="margin: 0 0 8px; color: var(--primary-blue); font-size: 0.9rem;">June 2026</h5>
-                        <a href="../assets/docs/suttons/som-newsletter-2026-6.pdf" target="_blank" class="btn-media-action" style="display: inline-block; padding: 6px 10px; font-size: 0.8rem;">
-                            📄 View PDF
-                        </a>
-                    </div>
-
-                </div> <!-- End of Past Newsletters Grid -->
-
-                <!-- DIRECT FIELD CONTACT BOX (Restored to Bottom) -->
-                <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; background: var(--bg-white); padding: 15px; border-radius: 8px; border: 1px solid var(--card-border);">
-                    📧 <strong>Email:</strong> suttonsonmission@gmail.com<br>
-                    📞 <strong>Phone:</strong> (931) 216-6625<br>
-                    📸 <strong>Socials:</strong> @suttonsonmission
+                <!-- September Newsletter -->
+                <div style="background: var(--bg-white); border: 1px solid var(--card-border); border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,.04);">
+                    <img src="../assets/docs/suttons/som-newsletter-2026-9-1.png" alt="September 2026 Suttons Newsletter" style="width: 100%; max-width: 120px; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                    <h5 style="margin: 0 0 8px; color: var(--primary-blue); font-size: 0.9rem;">September 2026</h5>
+                    <a href="../assets/docs/suttons/som-newsletter-2026-9.pdf" target="_blank" class="btn-media-action" style="display: inline-block; padding: 6px 10px; font-size: 0.8rem;">
+                        📄 View PDF
+                    </a>
+                </div>
+                
+                <!-- August Newsletter -->
+                <div style="background: var(--bg-white); border: 1px solid var(--card-border); border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,.04);">
+                    <img src="../assets/docs/suttons/som_newsletter_ Aug_2026-1.png" alt="August 2026 Suttons Newsletter" style="width: 100%; max-width: 120px; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                    <h5 style="margin: 0 0 8px; color: var(--primary-blue); font-size: 0.9rem;">August 2026</h5>
+                    <a href="../assets/docs/suttons/som-newsletter-2026-8.pdf" target="_blank" class="btn-media-action" style="display: inline-block; padding: 6px 10px; font-size: 0.8rem;">
+                        📄 View PDF
+                    </a>
                 </div>
 
+                <!-- July Newsletter -->
+                <div style="background: var(--bg-white); border: 1px solid var(--card-border); border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,.04);">
+                    <img src="../assets/docs/suttons/som-newsletter- july-2026-1.png" alt="July 2026 Suttons Newsletter" style="width: 100%; max-width: 120px; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                    <h5 style="margin: 0 0 8px; color: var(--primary-blue); font-size: 0.9rem;">July 2026</h5>
+                    <a href="../assets/docs/suttons/som-newsletter-2026-7.pdf" target="_blank" class="btn-media-action" style="display: inline-block; padding: 6px 10px; font-size: 0.8rem;">
+                        📄 View PDF
+                    </a>
+                </div>
+
+                <!-- June Newsletter -->
+                <div style="background: var(--bg-white); border: 1px solid var(--card-border); border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,.04);">
+                    <img src="../assets/docs/suttons/som-newsletter-june-2026-1.png" alt="June 2026 Suttons Newsletter" style="width: 100%; max-width: 120px; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                    <h5 style="margin: 0 0 8px; color: var(--primary-blue); font-size: 0.9rem;">June 2026</h5>
+                    <a href="../assets/docs/suttons/som-newsletter-2026-6.pdf" target="_blank" class="btn-media-action" style="display: inline-block; padding: 6px 10px; font-size: 0.8rem;">
+                        📄 View PDF
+                    </a>
+                </div>
+
+            </div> <!-- End of Past Newsletters Grid -->
+
+            <!-- DIRECT FIELD CONTACT BOX -->
+            <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; background: var(--bg-white); padding: 15px; border-radius: 8px; border: 1px solid var(--card-border);">
+                📧 <strong>Email:</strong> suttonsonmission@gmail.com<br>
+                📞 <strong>Phone:</strong> (931) 216-6625<br>
+                📸 <strong>Socials:</strong> @suttonsonmission
             </div>
+
         </div>
+      </div>
     </main>
 
     <!-- SUTTONS MISSION PHOTO GALLERY -->
