@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!ticker) return;
 
     const announcements = [
-        '🎒 <strong>It\s with heavy hearts we announce the passing of our beloved Pastor: Vance Evans Sr. Please respect the families privacy during this time of mourning!',
+        '🎒 <strong>It\s with heavy hearts we announce the passing of our beloved Pastor: Vance Evans Sr. Please pray for the familiy during this time of mourning!',
         '💦 <strong>Ministry Event Scheduled:</strong> Womens Ministry, November 16th @ 5:30pm :)',
         '🍎 <strong>Feeding America:</strong> Kentucky Based food distribution Tuesday November 10 9-12pm, Oak Grove Community Center!',
         /*'🎂 <strong>Birthday:</strong> 19 Aug, 1st Ladies Birthday!',*/
