@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!ticker) return;
 
     const announcements = [
-        /*'🎒 <strong>2026 Backpack Giveaway:</strong> Friday, August 7th at 11:30 AM in memory of Helen J. Stanfill!',*/
+        '🎒 <strong>It\s with heavy hearts we announce the passing of our beloved Pastor: Vance Evans Sr. Please respect the families privacy during this time of mourning!',
         '💦 <strong>Ministry Event Scheduled:</strong> Womens Ministry, November 16th @ 5:30pm :)',
         '🍎 <strong>Feeding America:</strong> Kentucky Based food distribution Tuesday November 10 9-12pm, Oak Grove Community Center!',
         /*'🎂 <strong>Birthday:</strong> 19 Aug, 1st Ladies Birthday!',*/
         '📖 <strong>Awanas:</strong> Wednesday\'s @ 6pm!',
-        '📦 <strong>Food Pantry:</strong> Elisha\'s Closet and Food Pantry Friday November 20th @ 9:00am - 12:00pm!',
+        '📦 <strong>Food Pantry:</strong>The Elisha\'s Closet and Food Pantry scheduled for Friday November 20th @ 9:00am - 12:00pm is cancelled this month!',
         '📦 <strong>Thanksgiving Food Distribution:</strong> A Mission of Hope\ Thanksgiving Food Giveaway, Viceroy Performing Arts Center, Oak Grove, KY, Saturday November 21st @ 11:00am - 2:00pm!',
         /*'👔 <strong>Childrens Ministry  Qtr Meeting:</strong> Saturday, TBD @ 10:00 AM!',
         /*'🕊️ <strong>Baptism:</strong> Baptism Sunday August 23rd!',*/
