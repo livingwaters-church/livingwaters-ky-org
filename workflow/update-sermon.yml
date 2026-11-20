@@ -2,7 +2,6 @@ name: Update Latest Sermon
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: "0 * * * *"
 
@@ -38,7 +37,8 @@ jobs:
 
           git add data/latest-sermon.json
 
-          git diff --cached --quiet || (
+          if ! git diff --cached --quiet; then
             git commit -m "Update latest sermon"
+            git pull --rebase origin main
             git push
-          )
+          fi
