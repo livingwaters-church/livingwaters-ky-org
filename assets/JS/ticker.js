@@ -6,11 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const announcements = [
         '🚨 <strong>It is with heavy hearts and profound sorrow we announce the passing of our beloved Pastor, Vance Evans Sr. Please keep his family and our church community in your prayers during this time of mourning.</strong>',
         '💦 <strong>Ministry Event Scheduled:</strong> Womens Ministry, November 16th @ 5:30pm :)',
-        '🍎 <strong>Feeding America:</strong> Kentucky Based food distribution Tuesday November 10 9-12pm, Oak Grove Community Center!',
-        /*'🎂 <strong>Birthday:</strong> 19 Aug, 1st Ladies Birthday!',*/
+        '🧺 <strong>Food Crisis Assistance:</strong> Food baskets are available anytime for families facing a hunger crisis—reach out to A Mission of Hope or Elisha\'s Closet for support.',
         '📖 <strong>Awanas:</strong> Wednesday\'s @ 6pm!',
-        '📦 <strong>Food Pantry:</strong>The Elisha\'s Closet and Food Pantry scheduled for Friday November 20th @ 9:00am - 12:00pm is cancelled this month!',
-        '📦 <strong>Thanksgiving Food Distribution:</strong> A Mission of Hope\ Thanksgiving Food Giveaway, Viceroy Performing Arts Center, Oak Grove, KY, Saturday November 21st @ 11:00am - 2:00pm!',
+        '📦 <strong>Food Pantry:</strong> The Elisha\'s Closet and Food Pantry scheduled for Friday November 20th @ 9:00am - 12:00pm is cancelled this month!',
+        '📦 <strong>Thanksgiving Food Distribution:</strong> A Mission of Hope Thanksgiving Food Giveaway, Viceroy Performing Arts Center, Oak Grove, KY, Saturday November 21st @ 11:00am - 2:00pm!',
         /*'👔 <strong>Childrens Ministry  Qtr Meeting:</strong> Saturday, TBD @ 10:00 AM!',
         /*'🕊️ <strong>Baptism:</strong> Baptism Sunday August 23rd!',*/
         /*'👔 <strong>Singles Ministry:</strong> Saturday, October 24th @ 19:00 AM!',
