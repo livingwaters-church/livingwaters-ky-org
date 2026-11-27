@@ -6,6 +6,8 @@
     <title>A Mission of Hope | Living Waters Community Church</title>
     <!-- Stepping up one directory level to reach our global assets folder -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .video-embed-wrapper {
             position: relative;
@@ -40,6 +42,16 @@
                 <li><a href="../about/index.html">About</a></li>
                 <li><a href="index.html" class="active">Ministries</a></li>
                 <li><a href="../media/index.html">Media</a></li>
+
+                <!-- Theme Toggle Slider Button -->
+                <li>
+                    <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle Dark/Light Mode">
+                        <span class="slider-thumb">
+                            <i id="theme-icon" class="fa-solid fa-moon"></i>
+                        </span>
+                    </button>
+                </li>
+
                 <li><a href="../donate/index.html" class="btn-nav-give">Give</a></li>
             </ul>
         </nav>
@@ -194,5 +206,7 @@
         </div>
     </footer>
 
+    <!-- SCRIPTS -->
+    <script src="../assets/JS/theme.js"></script>
 </body>
 </html>
