@@ -1802,3 +1802,23 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     line-height: 1.55;
     color: var(--text-muted);
 }
+
+.december-event-card img.december-flyer-img {
+    display: block !important;
+    width: auto !important;
+    max-width: 240px !important;
+    max-height: 220px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    margin: 14px auto 6px !important;
+    border-radius: 6px;
+    border: 1px solid rgba(56, 189, 248, 0.45);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.december-event-card img.december-flyer-img:hover {
+    transform: scale(1.03) !important;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.4);
+}
