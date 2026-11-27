@@ -1822,3 +1822,10 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     transform: scale(1.03) !important;
     box-shadow: 0 12px 26px rgba(0, 0, 0, 0.4);
 }
+
+.december-event-card .december-flyer-caption {
+    display: block !important;
+    width: 100%;
+    text-align: center !important;
+    margin-top: 6px;
+}
