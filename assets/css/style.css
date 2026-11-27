@@ -1733,13 +1733,14 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 }
 
 .december-spotlight {
-    background: var(--bg-light);
-    border: 1px solid #e2e8f0;
+    background-color: var(--bg-light); /* #1e293b in dark mode */
+    border: 1px solid var(--card-border);
     border-left: 5px solid var(--accent-blue, #38bdf8);
     border-radius: var(--radius-lg, 12px);
     padding: 24px 28px;
     margin-bottom: 30px;
 }
+
 .december-spotlight-header {
     display: flex;
     align-items: center;
@@ -1748,14 +1749,18 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     gap: 10px;
     margin-bottom: 18px;
 }
+
 .december-spotlight-header h2 {
     margin: 0;
     color: var(--primary-blue);
     font-size: 1.35rem;
 }
+
+/* Matches the Copy Volunteer Emails outline pill aesthetic */
 .december-badge {
-    background: #e0f2fe;
-    color: var(--accent-blue, #0284c7);
+    background-color: transparent;
+    color: var(--accent-blue, #38bdf8);
+    border: 1px solid var(--accent-blue, #38bdf8);
     font-size: 0.78rem;
     font-weight: 700;
     padding: 4px 12px;
@@ -1763,30 +1768,37 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     text-transform: uppercase;
     letter-spacing: 0.04em;
 }
+
 .december-events-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
+
+/* Same #1e293b dark slate surface with subtle #38bdf8 accent border */
 .december-event-card {
-    background: var(--bg-white);
-    border: 1px solid #e2e8f0;
-    border-radius: var(--radius-sm, 8px);
+    background-color: var(--bg-light);
+    border: 1px solid rgba(56, 189, 248, 0.45);
+    border-radius: var(--radius-sm, 6px);
     padding: 20px;
 }
+
 .december-event-card h3 {
     margin: 0 0 6px 0;
-    color: var(--primary-blue);
+    color: var(--accent-blue, #38bdf8);
     font-size: 1.1rem;
 }
+
 .december-event-meta {
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: var(--text-main);
     margin-bottom: 10px;
     line-height: 1.5;
 }
+
 .december-event-card p {
     margin: 0;
     font-size: 0.92rem;
     line-height: 1.55;
+    color: var(--text-muted);
 }
