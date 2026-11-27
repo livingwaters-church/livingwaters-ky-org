@@ -26,6 +26,75 @@
             height: 100%;
             border: 0;
         }
+        .thanksgiving-showcase {
+            width: 100%;
+            max-height: 280px;
+            object-fit: cover;
+            border-radius: var(--radius-sm);
+            border: 2px solid var(--accent-blue);
+            cursor: pointer;
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 10px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .thanksgiving-showcase:hover {
+            transform: scale(1.015);
+            box-shadow: 0 8px 18px rgba(15, 23, 42, 0.22);
+        }
+        .thanksgiving-gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+        }
+        .thanksgiving-gallery img {
+            width: 100%;
+            height: 75px;
+            object-fit: cover;
+            border-radius: var(--radius-sm);
+            border: 1px solid #cbd5e1;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: block;
+        }
+        .thanksgiving-gallery img:hover {
+            transform: scale(1.04);
+            box-shadow: 0 6px 14px rgba(15, 23, 42, 0.2);
+        }
+        .gallery-lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.88);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery-lightbox.open {
+            display: flex;
+        }
+        .gallery-lightbox img {
+            max-width: 92vw;
+            max-height: 86vh;
+            border-radius: 8px;
+            border: 2px solid #38bdf8;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+        .gallery-lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 28px;
+            background: #38bdf8;
+            color: #0f172a;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 1.3rem;
+            font-weight: 800;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -69,7 +138,7 @@
         <!-- Back Link Navigation Block -->
         <p style="margin-bottom: 30px;"><a href="index.html" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">← Back to All Ministries</a></p>
 
-        <!-- BALANCED TWO COLUMN DETAILS LAYOUT -->
+        <!-- BALANCED TWO COLUMN DETAILS LAYOUT (3 CARDS LEFT / 3 CARDS RIGHT) -->
         <div class="media-split-row" style="align-items: stretch;">
 
             <!-- Left Column: 3 Outreach Program Cards -->
@@ -149,7 +218,7 @@
 
             </div>
 
-            <!-- Right Column: 2 Cards (Outreach Leadership + Video Spotlight) -->
+            <!-- Right Column: 3 Cards (Leadership + Thanksgiving Giveaway + Video Spotlight) -->
             <div class="media-panel" style="flex: 1; display: flex; flex-direction: column; gap: 30px; background: transparent; border: none; padding: 0; box-shadow: none;">
 
                 <!-- CARD 1: LEADERSHIP & VOLUNTEER ACTION -->
@@ -162,8 +231,49 @@
                     <a href="mailto:office@livingwaterschurch.org?subject=A Mission of Hope Volunteering" class="btn-media-action" style="width: 100%;">Connect to Volunteer</a>
                 </div>
 
-                <!-- CARD 2: MINISTRY VIDEO SPOTLIGHT -->
+                <!-- CARD 2: ANNUAL THANKSGIVING BASKET GIVEAWAY -->
                 <div style="background: var(--bg-white); border: 1px solid #e2e8f0; border-radius: var(--radius-lg); padding: 30px;">
+                    <h3 style="color: var(--primary-blue); margin-bottom: 5px;">Annual Thanksgiving Basket Giveaway</h3>
+                    <span style="display: inline-block; background: #fef3c7; color: #b45309; font-size: 0.8rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; margin-bottom: 15px;">Seasonal Outreach</span>
+
+                    <p>Blessing local Oak Grove families with complete Thanksgiving dinner baskets so every household can share a warm holiday meal around the table.</p>
+
+                    <div style="margin: 20px 0; background: var(--bg-light); padding: 20px; border-radius: var(--radius-sm);">
+                        <h5 style="color: var(--primary-blue); margin-bottom: 5px;">Event Logistics:</h5>
+                        <p style="font-size: 0.95rem; margin-bottom: 4px;">📅 <strong>Saturday, November 21st @ 11:30 AM</strong></p>
+                        <p style="font-size: 0.95rem;">📍 <strong>Living Waters Community Church / Oak Grove</strong></p>
+                    </div>
+
+                    <div style="background: var(--bg-light); padding: 20px; border-radius: var(--radius-sm); border-left: 4px solid var(--accent-blue); margin-bottom: 20px;">
+                        <h5 style="color: var(--primary-blue); margin-bottom: 10px;">Holiday Basket Items Needed:</h5>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 8px; font-size: 0.9rem; color: var(--text-muted);">
+                            <div>• Frozen Turkeys & Hams</div>
+                            <div>• Stuffing Mix & Instant Potatoes</div>
+                            <div>• Canned Green Beans & Corn</div>
+                            <div>• Cranberry Sauce & Gravy</div>
+                            <div>• Dinner Rolls & Pie Crusts</div>
+                            <div>• Canned Yams & Pumpkin</div>
+                        </div>
+                    </div>
+
+                    <h5 style="color: var(--primary-blue); margin-bottom: 4px;">Thanksgiving Outreach Photos</h5>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0;">Click any photo to view full size.</p>
+
+                    <!-- Showcase Photo (turkey9.jpg) -->
+                    <img src="../assets/images/a%20mission%20of%20hope/turkey9.jpg" alt="Annual Thanksgiving Basket Giveaway Showcase" class="thanksgiving-showcase" onclick="openLightbox(this.src, this.alt)">
+
+                    <!-- 5-Thumbnail Strip (turkey1.jpg - turkey5.jpg) -->
+                    <div class="thanksgiving-gallery">
+                        <img src="../assets/images/a%20mission%20of%20hope/turkey1.jpg" alt="Thanksgiving Basket Giveaway 1" loading="lazy" onclick="openLightbox(this.src, this.alt)">
+                        <img src="../assets/images/a%20mission%20of%20hope/turkey2.jpg" alt="Thanksgiving Basket Giveaway 2" loading="lazy" onclick="openLightbox(this.src, this.alt)">
+                        <img src="../assets/images/a%20mission%20of%20hope/turkey3.jpg" alt="Thanksgiving Basket Giveaway 3" loading="lazy" onclick="openLightbox(this.src, this.alt)">
+                        <img src="../assets/images/a%20mission%20of%20hope/turkey4.jpg" alt="Thanksgiving Basket Giveaway 4" loading="lazy" onclick="openLightbox(this.src, this.alt)">
+                        <img src="../assets/images/a%20mission%20of%20hope/turkey5.jpg" alt="Thanksgiving Basket Giveaway 5" loading="lazy" onclick="openLightbox(this.src, this.alt)">
+                    </div>
+                </div>
+
+                <!-- CARD 3: MINISTRY VIDEO SPOTLIGHT -->
+                <div style="background: var(--bg-light); border: 1px solid #e2e8f0; border-radius: var(--radius-lg); padding: 30px; flex: 1;">
                     <h3 style="color: var(--primary-blue); margin-bottom: 8px;">Mission of Hope Spotlight</h3>
                     <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px;">Watch our community outreach video feature below or open it directly on YouTube.</p>
 
@@ -189,6 +299,12 @@
         </div>
     </main>
 
+    <!-- LIGHTBOX OVERLAY FOR GALLERY PHOTOS -->
+    <div id="gallery-lightbox" class="gallery-lightbox" onclick="closeLightbox(event)">
+        <button type="button" class="gallery-lightbox-close" aria-label="Close photo" onclick="closeLightbox(event)">×</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
     <!-- GLOBAL FOOTER -->
     <footer class="global-footer">
         <div class="footer-grid">
@@ -213,5 +329,24 @@
 
     <!-- SCRIPTS -->
     <script src="../assets/JS/theme.js"></script>
+    <script>
+        function openLightbox(src, alt) {
+            const lightbox = document.getElementById('gallery-lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            img.alt = alt;
+            lightbox.classList.add('open');
+        }
+        function closeLightbox(event) {
+            if (event.target.id === 'gallery-lightbox' || event.target.classList.contains('gallery-lightbox-close')) {
+                document.getElementById('gallery-lightbox').classList.remove('open');
+            }
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('gallery-lightbox').classList.remove('open');
+            }
+        });
+    </script>
 </body>
 </html>
