@@ -1721,4 +1721,65 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 .hero-content p {
     color: #ffffff !important;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+
+.december-spotlight {
+    background: var(--bg-light);
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid var(--accent-blue, #38bdf8);
+    border-radius: var(--radius-lg, 12px);
+    padding: 24px 28px;
+    margin-bottom: 30px;
+}
+.december-spotlight-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+.december-spotlight-header h2 {
+    margin: 0;
+    color: var(--primary-blue);
+    font-size: 1.35rem;
+}
+.december-badge {
+    background: #e0f2fe;
+    color: var(--accent-blue, #0284c7);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.december-events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.december-event-card {
+    background: var(--bg-white);
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-sm, 8px);
+    padding: 20px;
+}
+.december-event-card h3 {
+    margin: 0 0 6px 0;
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+}
+.december-event-meta {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.december-event-card p {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+   
 }
