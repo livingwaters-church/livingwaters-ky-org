@@ -286,7 +286,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
     max-width: 620px;
     margin: 0 auto !important;
     text-align: left !important;
-    transform: translateX(-34%) !important;
+    transform: translateX(-44%) !important;
 }
 
 .hero-text-backdrop h1 {
