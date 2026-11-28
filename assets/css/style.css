@@ -276,15 +276,17 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 /* --- Hero Backdrop --- */
 .hero-text-backdrop {
     display: inline-block !important;
+    align-self: flex-start !important;
+    justify-self: start !important;
     background: rgba(15, 23, 42, 0.88) !important;
     border: 2px solid #38bdf8 !important;
     border-radius: var(--radius-lg, 12px) !important;
-    padding: 24px 32px !important;
+    padding: 22px 28px !important;
     box-shadow: 0 14px 34px rgba(0, 0, 0, 0.55) !important;
-    max-width: 560px;
-    margin-right: auto !important;
-    margin-left: 4% !important;
+    max-width: 440px;
+    margin: 0 auto 0 0 !important;
     text-align: left !important;
+    transform: translateX(-22%) !important;
 }
 
 .hero-text-backdrop h1 {
