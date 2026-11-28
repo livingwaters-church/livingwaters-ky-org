@@ -1634,9 +1634,7 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 }
 
 /* ==========================================================================
-
    EVENT CARD SYSTEM & MODIFIERS
-
    ========================================================================== */
 
  .event-card {
@@ -1730,6 +1728,17 @@ body[data-theme="dark"] .btn-theme-toggle .slider-thumb {
 .hero-content p {
     color: #ffffff !important;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.volunteer-email-list a {
+    color: var(--accent-blue, #38bdf8);
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.volunteer-email-list a:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
 }
 
 .december-spotlight {
